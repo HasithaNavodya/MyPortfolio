@@ -28,7 +28,6 @@
             background-color: #EF6C00;
             position: fixed;
             width: 100%;
-            padding: 5px;
             box-shadow: 1px 2px 1px #6b5a5a;
             z-index: 3;
         }
@@ -39,35 +38,35 @@
             align-items: center;
         }
 
-        header > div > nav> ul {
+        header > div > nav > ul {
             display: flex;
         }
 
-        header > div > nav> ul > li {
+        header > div > nav > ul > li {
             padding: 10px 20px;
 
             font-size: 18px;
             transition: all .2s ease-in-out;
         }
 
-        header > div >nav> ul > li:hover {
-            background-color: #0f4052;
+        header > div > nav > ul > li:hover {
+            background-color: #ffffff;
             border-radius: 20px;
             cursor: pointer;
         }
 
-        header > div > nav>ul > li:nth-child(7) > a:hover {
+        header > div > nav > ul > li:nth-child(7) > a:hover {
             border-radius: 20px;
             cursor: pointer;
-            color: white;
+            color: black;
         }
 
-        header > div > nav>ul > li:nth-child(7) > a {
+        header > div > nav > ul > li:nth-child(7) > a {
             color: black;
         }
 
         body > header > div > h1 {
-            box-shadow: 1px 2px 9px 1px #6b5a5a;
+            height: 53px;
         }
 
         /*-main style*/
@@ -75,7 +74,7 @@
             position: relative;
             top: 100px;
             z-index: 1;
-            height: 100vh;
+
             width: 100%;
         }
 
@@ -86,10 +85,11 @@
             width: 100%;
             background: white;
             position: sticky;
-            top: 100px;
+            top: 53px;
+            background-color: #EF6C00;
 
             /*border-radius: 0px 15px 15px 0px;*/
-            background-color: white;
+
             z-index: 2;
             text-align: center;
         }
@@ -107,7 +107,7 @@
 
         main > section:first-child {
             position: relative;
-            height: 104%;
+            height: 100vh;
         }
 
         main > section:first-child > section {
@@ -130,23 +130,27 @@
             left: 60%;
         }
 
+        main > section:first-child > div > section>div> a>img{
+            width: 40px;
+        }
 
-        main > section:first-child > div > div:nth-child(2) > img {
+
+        main > section:first-child > div > section>div:first-child> a>img {
             top: 31%;
-            left: 91%;
+            left: 95%;
             position: absolute;
         }
 
 
-        main > section:first-child > div > div:nth-child(3) > img {
+        main > section:first-child > div > section>div:nth-child(2) >a> img {
             top: 46%;
-            left: 91%;
+            left: 95%;
             position: absolute;
         }
 
-        main > section:first-child > div > div:nth-child(4) > img {
+        main > section:first-child > div > section>div:nth-child(3) >a> img {
             top: 61%;
-            left: 91%;
+            left: 95%;
             position: absolute;
         }
 
@@ -203,7 +207,7 @@
         main > section:nth-child(2) {
             background-color: white;
             filter: saturate(1.4);
-            height: 104%;
+            height: 100vh;
         }
 
         main > section:nth-child(2) > div:nth-child(2) > div > img {
@@ -287,7 +291,7 @@
         main > section:nth-child(3) {
             background-color: white;
             filter: saturate(1.4);
-            height: 160%;
+            height: 160vh;
         }
 
         main > section:nth-child(3) > div:nth-child(2) > img {
@@ -322,7 +326,7 @@
         }
 
         main > section:nth-child(4) > section:nth-child(2) > div:first-child {
-            background-color: white;
+
 
             border-radius: 10px;
             position: absolute;
@@ -331,7 +335,7 @@
         }
 
         main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) {
-            background-color: white;
+
 
             border-radius: 10px;
             position: absolute;
@@ -340,7 +344,7 @@
         }
 
         main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
-            background-color: white;
+
             left: 0;
             right: 0;
             margin: auto;
@@ -366,7 +370,8 @@
             height: 35%;
             width: 25%;
             border: 2px solid black;
-            color: #C4CFDE;
+
+            background-color: #C4CFDE;
         }
 
         main > section:nth-child(4) > section:nth-child(2) > div > div {
@@ -436,500 +441,16 @@
 
         }
 
-        /*Section 05*/
 
+        /*Section 05*/
         main > section:nth-child(5) {
-            background-color: white;
+            position: relative;
+            height: 110vh;
+
+        }
+
+        main > section:nth-child(5) > section {
             filter: saturate(1.4);
-            height: 170%;
-        }
-
-        main > section:nth-child(5) > section:nth-child(2) {
-            position: relative;
-            height: 60vh;
-        }
-
-        main > section:nth-child(5) > section:nth-child(2) > div:first-child {
-            position: absolute;
-            width: 63%;
-            height: 77%;
-            top: 42px;
-            /* top: 0; */
-            /* bottom: 0; */
-            /* margin: auto; */
-            left: 20%;
-        }
-
-
-        main > section:nth-child(5) > section:nth-child(2) > div:first-child > img {
-            left: 16%;
-            position: absolute;
-            width: 59%;
-            height: 90%;
-            top: -14%;
-        }
-
-        /*Section 06*/
-
-        main > section:nth-child(6) {
-            background-color: white;
-            filter: saturate(1.4);
-            height: 170%;
-        }
-
-        main > section:nth-child(6) > section:nth-child(2) > section {
-            height: 50%;
-            position: absolute;
-            margin: auto;
-            top: 10%;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        main > section:nth-child(6) > section:nth-child(2) > section > div {
-
-            width: 5%;
-            height: max-content;
-        }
-
-        main > section:nth-child(6) > section:nth-child(2) > section > div > img {
-            width: 100%;
-
-        }
-
-        * {
-            scroll-behavior: smooth;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-            color: black;
-        }
-
-        header {
-            background-color: #EF6C00;
-            position: fixed;
-            width: 100%;
-            padding: 5px;
-            box-shadow: 1px 2px 1px #6b5a5a;
-            z-index: 3;
-        }
-
-        header > div {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header > div > ul {
-            display: flex;
-        }
-
-        header > div > ul > li {
-            padding: 10px 20px;
-
-            font-size: 18px;
-            transition: all .2s ease-in-out;
-        }
-
-        header > div > ul > li:hover {
-            background-color: #0f4052;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-
-        header > div > ul > li:nth-child(7) > a:hover {
-            border-radius: 20px;
-            cursor: pointer;
-            color: white;
-        }
-
-        header > div > ul > li:nth-child(7) > a {
-            color: black;
-        }
-
-        body > header > div > h1 {
-            box-shadow: 1px 2px 9px 1px #6b5a5a;
-        }
-
-        /*-main style*/
-        main {
-            position: relative;
-            top: 100px;
-            z-index: 1;
-            height: 100vh;
-            width: 100%;
-        }
-
-        /*Section 01*/
-        main > section > div:first-child {
-            box-shadow: 0px 0px 3px 0px #6b5a5a;
-            height: 60px;
-            width: 100%;
-            background: white;
-            position: sticky;
-            top: 100px;
-
-            /*border-radius: 0px 15px 15px 0px;*/
-            background-color: white;
-            z-index: 2;
-            text-align: center;
-        }
-
-        main > section > div > h1 {
-            color: black;
-            padding: 15px;
-            text-align: center;
-        }
-
-        main > section {
-            background-color: white;
-            filter: saturate(1.4);
-        }
-
-        main > section:first-child {
-            position: relative;
-            height: 104%;
-        }
-
-        main > section:first-child > section {
-            top: 142px;
-            left: 10%;
-            right: 42%;
-            font-size: 28px;
-            position: absolute;
-            height: 6%;
-        }
-
-        main > section:first-child > div > div:first-child > img {
-            background-color: #d70a0a;
-            border-color: red;
-            border-radius: 170%;
-            width: 30%;
-            height: 81%;
-            top: 12%;
-            position: absolute;
-            left: 60%;
-        }
-
-
-        main > section:first-child > div > div:nth-child(2) > img {
-            top: 31%;
-            left: 91%;
-            position: absolute;
-        }
-
-
-        main > section:first-child > div > div:nth-child(3) > img {
-            top: 46%;
-            left: 91%;
-            position: absolute;
-        }
-
-        main > section:first-child > div > div:nth-child(4) > img {
-            top: 61%;
-            left: 91%;
-            position: absolute;
-        }
-
-        main > section:first-child > section > button {
-            background-color: #EF6C00;
-            color: black;
-            width: 100px;
-            height: 32px;
-            border: 30px;
-            font-weight: bold;
-            font-size: 16px;
-            top: 780%;
-            position: absolute;
-            box-shadow: 0px 3px 6px 0px rgb(64, 12, 28);
-            left: 5%;
-            border-radius: 10%;
-        }
-
-        main > section:first-child > section > h1 {
-            color: black;
-            padding: 15px;
-            text-align: left;
-            font-size: 45px;
-        }
-
-        main > section:first-child > section > h4 {
-            position: absolute;
-            font-size: 31px;
-            left: 24px;
-            font-family: emoji;
-            top: 266%;
-        }
-
-        main > section:first-child > section > h5 {
-            color: #757575;
-            position: absolute;
-            font-size: 16px;
-            left: 24px;
-            font-family: emoji;
-            top: 430%;
-        }
-
-        main > section:first-child > section > h6 {
-            color: #757575;
-            position: absolute;
-            font-size: 15px;
-            left: 24px;
-            font-family: emoji;
-            top: 581%;
-        }
-
-        /*Section 02*/
-
-        main > section:nth-child(2) {
-            background-color: white;
-            filter: saturate(1.4);
-            height: 104%;
-        }
-
-        main > section:nth-child(2) > div:nth-child(2) > div > img {
-            background-color: #d70a0a;
-            border-color: #f90c0c;
-            border-radius: 170%;
-            width: 30%;
-            height: 81%;
-            top: 15%;
-            position: absolute;
-            right: 70%;
-            left: 3%;
-        }
-
-        main > section:nth-child(2) > section > article > p {
-            position: fixed;
-            font-size: 20px;
-            left: 38%;
-            top: 17%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(2) {
-            left: 38%;
-            position: absolute;
-            top: 43%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(3) {
-            left: 38%;
-            position: absolute;
-            top: 47%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(4) {
-            left: 38%;
-            position: absolute;
-            top: 51%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(5) {
-            left: 38%;
-            position: absolute;
-            top: 55%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(6) {
-            left: 70%;
-            position: absolute;
-            top: 43%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(7) {
-            left: 70%;
-            position: absolute;
-            top: 47%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(8) {
-            left: 70%;
-            position: absolute;
-            top: 51%;
-            color: #757575;
-        }
-
-        main > section:nth-child(2) > section > li:nth-child(9) {
-            left: 70%;
-            position: absolute;
-            top: 55%;
-            color: #757575;
-        }
-
-        /*Section 03*/
-
-        main > section:nth-child(3) {
-            background-color: white;
-            filter: saturate(1.4);
-            height: 160%;
-        }
-
-        main > section:nth-child(3) > div:nth-child(2) > img {
-            top: 15%;
-            left: 24%;
-            position: absolute;
-            border-radius: 5%;
-        }
-
-        main > section:nth-child(3) > div:nth-child(3) > img {
-            position: absolute;
-            left: 20%;
-            top: 55%;
-            border-radius: 5%;
-        }
-
-        main > section:nth-child(3) > div:nth-child(4) > img {
-            position: absolute;
-            left: 50%;
-            top: 62%;
-            border-radius: 5%;
-        }
-
-        /*Section 04*/
-
-        main > section:nth-child(4) > section:nth-child(2) {
-
-
-            position: relative;
-            height: 60vh;
-
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div:first-child {
-            background-color: white;
-
-            border-radius: 10px;
-            position: absolute;
-            top: 10%;
-            left: 20%;
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) {
-            background-color: white;
-
-            border-radius: 10px;
-            position: absolute;
-            top: 10%;
-            right: 20%;
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
-            background-color: white;
-            left: 0;
-            right: 0;
-            margin: auto;
-            border-radius: 10px;
-            position: absolute;
-            top: 55%;
-            /*margin-bottom: 50px;*/
-            /*right: 15%;*/
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div > h6 {
-            position: absolute;
-            font-family: "Times New Roman";
-            font-size: 1.1vw;
-            text-align: center;
-            top: 10%;
-            right: 0;
-            left: 0;
-
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div {
-            height: 35%;
-            width: 25%;
-            border: 2px solid black;
-            color: #C4CFDE;
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div > div {
-            position: absolute;
-            top: 40%;
-            height: 50%;
-            width: 100%;
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div > div > img {
-            position: absolute;
-            width: 10%;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            left: 15%;
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(2) {
-            position: absolute;
-            left: 35%;
-            top: 30%;
-        }
-
-        main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(3) {
-            position: absolute;
-            left: 35%;
-            top: 60%;
-        }
-
-        main > section:nth-child(4) > section:nth-child(3) {
-
-            height: 30vh;
-            position: relative;
-        }
-
-        main > section:nth-child(4) > section:nth-child(3) > h3 {
-            font-size: 1.5em;
-            margin: auto;
-            top: 20px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            width: max-content;
-        }
-
-        main > section:nth-child(4) > section:nth-child(3) > section {
-            height: 50%;
-            position: absolute;
-            margin: auto;
-            top: 10%;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        main > section:nth-child(4) > section:nth-child(3) > section > div {
-
-            width: 5%;
-            height: max-content;
-        }
-
-        main > section:nth-child(4) > section:nth-child(3) > section > div > img {
-            width: 100%;
-
-        }
-
-        /*Section 05*/
-
-        main>section:nth-child(5) {
-            position: relative;
-            height: 80vh;
-        }
-
-        main>section:nth-child(5)>section {
-
             position: relative;
             top: 31px;
             bottom: 75%;
@@ -937,47 +458,34 @@
             display: grid;
             grid-template-rows: repeat(1, 1fr);
             grid-template-columns: repeat(3, 1fr);
-            gap: 0vw;
+            gap: 5vw;
             width: 84vw;
             height: 66vh;
         }
 
-        main>section:nth-child(5)>section>div {
+        main > section:nth-child(5) > section > div {
             margin: auto;
             border-radius: 20px;
-            /*box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);*/
+            border: 2px solid black;
+            text-align: center;
+            font-size: 28px;
         }
 
-        main>section:nth-child(5)>section>div>img {
-            width: 25vw;
-            height: 49vh;
+        main > section:nth-child(5) > section > div > img {
+            width: 24vw;
+            height: 54vh;
             border-radius: 20px;
-            box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
-        }
-
-        main>section:nth-child(5)>section>div:first-child>img{
-            width: 15vw;
-            height: 40vh;
-            border-radius: 20px;
-            box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
-        }
-
-        main>section:nth-child(5)>section>div:last-child>img{
-            width: 15vw;
-            height: 40vh;
-            border-radius: 20px;
-            box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
         }
 
         /*Section 06*/
 
-        main>section:nth-child(6) {
+        main > section:nth-child(6) {
             position: relative;
             height: 110vh;
             filter: saturate(1.4);
         }
 
-        main>section:nth-child(6)>section {
+        main > section:nth-child(6) > section {
             position: relative;
             top: 31px;
             bottom: 75%;
@@ -989,16 +497,17 @@
             width: 77vw;
         }
 
-        main>section:nth-child(6)>section>div {
+        main > section:nth-child(6) > section > div {
             margin: auto;
-            box-shadow: 0px 0px 0px rgb(255, 1, 79);
+            box-shadow: -22px 18px 18px 6px #757575;
             text-align: center;
             font-size: 0px;
             width: 20vw;
             height: 40vh;
+            border-radius: 20px;
         }
 
-        main>section:nth-child(6)>section>div>img {
+        main > section:nth-child(6) > section > div > img {
             position: relative;
             top: 24px;
             width: 17vw;
@@ -1006,310 +515,503 @@
             border-radius: 20px;
             bottom: 31vh;
         }
+
+        /*Section 07*/
+
+        main > section:nth-child(7) {
+            position: relative;
+            height: 120vh;
+
+        }
+
+        main > section:nth-child(7) > section {
+            /*background-color: bisque;*/
+            height: 100%;
+            display: flex;
+        }
+
+        main > section:nth-child(7) > section > section:first-child {
+            background-color: #E1DADA;
+            width: 30%;
+            margin-left: 90px;
+            margin-right: 0;
+            border-radius: 10px;
+            top: 60px;
+            position: relative;
+            padding-bottom: 20px;
+            display: inline-block;
+            height: max-content;
+        }
+
+        main > section:nth-child(7) > section > section:first-child > img:first-child {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        main > section:nth-child(7) > section > section:first-child > h3 {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        main > section:nth-child(7) > section > section:first-child > div {
+            height: max-content;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .address_span {
+            font-weight: bold;
+        }
+
+        main > section:nth-child(7) > section > section:first-child > div > address {
+            font-style: normal;
+            line-height: 30px;
+            margin-left: 10px;
+        }
+
+        main > section:nth-child(7) > section > section:first-child > h4 {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        main > section:nth-child(7) > section > section:first-child > section {
+            display: flex;
+            padding-left: 20px;
+            margin-top: 10px;
+
+        }
+
+        main > section:nth-child(7) > section > section:first-child > section > div > a > img {
+            width: 40px;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) {
+            background-color: #E1DADA;
+            width: 50%;
+            position: absolute;
+            top: 120px;
+            margin-left: 50px;
+            display: inline-block;
+            height: max-content;
+            right: 0;
+            margin-right: 90px;
+            padding: 20px;
+            border-radius: 10px;
+            padding-top: 30px;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div {
+            padding: 10px;
+
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div > input {
+            width: 100%;
+            margin-top: 10px;
+            height: 27px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div > textarea {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 10px;
+            height: 100%;
+            border: 2px solid black;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div > label{
+            font-weight: bold;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(3) {
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(4) {
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+
+        main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(5) {
+            grid-column: 1/3;
+            grid-row: 5/6;
+            margin-top: 20px;
+            padding-bottom: 15px;
+        }
+
+        body>footer {
+            height: 193px;
+            width: 100%;
+            z-index: 1;
+            position: relative;
+        }
+
+        body>footer>nav {
+            width: 20%;
+            position: relative;
+            left: 85px;
+            top: 10px;
+            display:grid;
+        }
+        body>footer>div {
+            width: 40%;
+            position: absolute;
+            left: 809px;
+            top: 9px;
+            justify-content: space-evenly;
+
+        }
+        body>footer>div>div {
+            border-radius: 14px;
+        }
+
+        body>footer>div>div>a>img {
+            width:4vw;
+        }
+
+        body>footer>cite {
+            width:100%;
+            position: absolute;
+            text-align: center;
+            top: 20vh;
+            font-size: 18px;
+        }
+        body>footer>small {
+            width:100%;
+            top: 21vh;
+            position: absolute;
+            font-size: 12px;
+            text-align: center;
+        }
+
+
+
     </style>
 </head>
 
 <body>
-
-
-<header>
-    <div>
-        <h1><a href="#home"><img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA2UlEQVR4nO2ZQQrDMBAD9b8m9FEl0E+1yZda565efKmx2XVD8BY0oGNAsnZjSAAhxK9cAWwAdgAcrB3ACmDuDXEPYJ4NLT1NMLgmT5AtgFEaenqCpABGaejtCcI/kclog1SQgtEnTTVScPRkzn6OZy27ghSokRYarYyWHXpr1dGOHCTcaCkI1EgdLXtGFyKC7YgagRqpo9HKaEegz0F1Rn1wUyMtRp80R93sYYOkACZp6OUJsgYwSkMPT5A5gFEausDJEsAsG7qhkyn/PY2wMymPk7sJIQS++AD3GvBu8Lvy0QAAAABJRU5ErkJggg=="
-                width="78"></a></h1>
-        <nav>
-            <ul>
-                <li><a href="#home"><i class="fa-solid fa-sitemap"></i>Home</a></li>
-                <li><a href="#aboutme"><i class="fa-solid fa-cart-shopping"></i>About me</a></li>
-                <li><a href="#gallery"><i class="fa-solid fa-cart-shopping"></i>Gallery</a></li>
-                <li><a href="#education"><i class="fa-solid fa-file-invoice"></i>Education</a></li>
-                <li><a href="#project"><i class="fa-solid fa-file-invoice"></i>Project</a></li>
-                <li><a href="#assignment"><i class="fa-solid fa-cart-shopping"></i>Assignment</a></li>
-                <li><a href="#Contact"><i class="fa-solid fa-file-invoice"></i>Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<main>
-    <section>
+    <header>
+        <div>
+            <h1><a href="#home"><img
+                    src="assets/images/H.png"
+                    width="78"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-sitemap"></i>Home</a></li>
+                    <li><a href="#aboutme"><i class="fa-solid fa-cart-shopping"></i>About me</a></li>
+                    <li><a href="#gallery"><i class="fa-solid fa-cart-shopping"></i>Gallery</a></li>
+                    <li><a href="#education"><i class="fa-solid fa-file-invoice"></i>Education</a></li>
+                    <li><a href="#project"><i class="fa-solid fa-file-invoice"></i>Project</a></li>
+                    <li><a href="#assignment"><i class="fa-solid fa-cart-shopping"></i>Assignment</a></li>
+                    <li><a href="#Contact"><i class="fa-solid fa-file-invoice"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
         <section>
-            <h1>Welcome...</h1>
-            <h4>Hello I'm Hasitha Navodya</h4>
-            <h5>A Student of Institute of Java & Software Engineering from Sri Lanka</h5>
-            <h6>Must Explain To How All This Mistaken Idea Denouncing Pleasure Pain The System And Expound the
-                Actua.
-            </h6>
-            <button type="button">About me</button>
-        </section>
-        <div>
-            <div>
-                <img src="assets/images/Wel1.jpg" alt="MyPicture1" width="300">
-            </div>
-            <div>
-                <img src="assets/images/Wel2.png" alt="FacebookLogo" width="60">
-            </div>
-            <div>
-                <img src="assets/images/Wel3.png" alt="GithubLogo" width="60">
-            </div>
-            <div>
-                <img src="assets/images/Wel4.png" alt="LinkedInLogo" width="60">
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-        <div><h1> About me </h1></div>
-
-        <div>
-            <div>
-                <img src="assets/images/AboutMe.jpg" alt="MyPicture2" width="300">
-            </div>
-        </div>
-        <section>
-            <article>
-                <p>I’m Hasitha Navodya.I began my Software engineer
-                    life in 2022. I've spent most of my working hours for
-                    the last years designing, programming. I have
-                    acquired the skills and knowledge necessary to make
-                    your project a success.
-                </p>
-            </article>
-            <li> Name : Hasitha Navodya</li>
-            <li> Age : 21</li>
-            <li> Address : Galle,Sri Lanka</li>
-            <li> Contact : +94762805151</li>
-            <li> Education : Undergratuated</li>
-            <li> Email : hasithanavodya@gmail.com</li>
-            <li> Linked in : Hasitha Navodya</li>
-            <li> Github : HasithaNavodya</li>
-        </section>
-    </section>
-
-    <section>
-        <div><h1> Gallery </h1></div>
-
-        <div>
-            <img src="assets/images/Gallery1.jpg" alt="Gallery1" width="800">
-        </div>
-        <div>
-            <img src="assets/images/Gallery2.jpg" alt="Gallery2" width="450">
-        </div>
-        <div>
-            <img src="assets/images/Gallery3.jpg" alt="Gallery3" width="470">
-        </div>
-    </section>
-
-    <section>
-        <div><h1> Education </h1></div>
-
-        <section>
-            <div>
-                <h6>G.C.E Ordinary Level (O/L)(2017-2018)</h6>
-                <div>
-                    <img src="assets/images/SchoolLogo.jpg" alt="SchoolLogo" width="40" usemap="#myMap">
-                    <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
-                        College </a></h6>
-                    <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
-                        Result </a></h6>
-                </div>
-            </div>
-            <div>
-                <h6>G.C.E Advanced Level (A/L) (2019-2021)</h6>
-                <div><img src="assets/images/SchoolLogo.jpg" alt="SchoolLogo" width="40" usemap="#myMap">
-                    <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
-                        College </a></h6>
-                    <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
-                        Result </a></h6>
-                </div>
-            </div>
-            <div>
-                <h6>Graduate Diploma in Software <br>
-                    Engineering (GDSE)
+            <section>
+                <h1>Welcome...</h1>
+                <h4>Hello I'm Hasitha Navodya</h4>
+                <h5>A Student of Institute of Java & Software Engineering from Sri Lanka</h5>
+                <h6>Must Explain To How All This Mistaken Idea Denouncing Pleasure Pain The System And Expound the
+                    Actua.
                 </h6>
-                <div><img src="assets/images/IjseLogo.png" alt="IjseLogo" width="40" usemap="#myMap">
-                    <h6><a href="https://ijse.lk/">View Institute </a></h6>
+                <button type="button">About me</button>
+            </section>
+            <div>
+                <div>
+                    <img src="assets/images/Wel1.jpg" alt="MyPicture1" width="300">
+                </div>
+                <section>
+                    <div>
+                        <a href="https://web.facebook.com/hasitha.navodya.754/"><img src="assets/images/Wel2.png" alt="FacebookLogo" usemap="#myMap"></a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/HasithaNavodya"><img src="assets/images/Wel3.png" alt="GithubLogo" usemap="#myMap"></a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/hasitha-navodya-a2297b267/"><img src="assets/images/Wel4.png" alt="LinkedInLogo" usemap="#myMap"></a>
+                    </div>
+                </section>
+
+            </div>
+
+        </section>
+
+        <section>
+            <div><h1> About me </h1></div>
+
+            <div>
+                <div>
+                    <img src="assets/images/AboutMe.jpg" alt="MyPicture2" width="300">
                 </div>
             </div>
+            <section>
+                <article>
+                    <p>I’m Hasitha Navodya.I began my Software engineer
+                        life in 2022. I've spent most of my working hours for
+                        the last years designing, programming. I have
+                        acquired the skills and knowledge necessary to make
+                        your project a success.
+                    </p>
+                </article>
+                <li> Name : Hasitha Navodya</li>
+                <li> Age : 21</li>
+                <li> Address : Galle,Sri Lanka</li>
+                <li> Contact : +94762805151</li>
+                <li> Education : Undergratuated</li>
+                <li> Email : hasithanavodya@gmail.com</li>
+                <li> Linked in : Hasitha Navodya</li>
+                <li> Github : HasithaNavodya</li>
+            </section>
         </section>
+
         <section>
-            <h3>Languages and tools</h3>
+            <div><h1> Gallery </h1></div>
+
+            <div>
+                <img src="assets/images/Gallery1.jpg" alt="Gallery1" width="800">
+            </div>
+            <div>
+                <img src="assets/images/Gallery2.jpg" alt="Gallery2" width="450">
+            </div>
+            <div>
+                <img src="assets/images/Gallery3.jpg" alt="Gallery3" width="470">
+            </div>
+        </section>
+
+        <section>
+            <div><h1> Education </h1></div>
+
             <section>
                 <div>
-                    <img src="assets\images\JavaLogo.png" alt="an image" usemap="#myMap">
+                    <h6>G.C.E Ordinary Level (O/L)(2017-2018)</h6>
+                    <div>
+                        <img src="assets/images/SchoolLogo.jpg" alt="SchoolLogo" width="40" usemap="#myMap">
+                        <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
+                            College </a></h6>
+                        <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
+                            Result </a></h6>
+                    </div>
                 </div>
                 <div>
-                    <img src="assets\images\CSSLogo.png" alt="an image" usemap="#myMap">
+                    <h6>G.C.E Advanced Level (A/L) (2019-2021)</h6>
+                    <div><img src="assets/images/SchoolLogo.jpg" alt="SchoolLogo" width="40" usemap="#myMap">
+                        <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
+                            College </a></h6>
+                        <h6><a href="https://www.linkedin.com/school/st-aloysius-college-galle/?originalSubdomain=lk"> View
+                            Result </a></h6>
+                    </div>
                 </div>
                 <div>
-                    <img src="assets\images\HtmlLogo.png" alt="an image" usemap="#myMap">
+                    <h6>Graduate Diploma in Software <br>
+                        Engineering (GDSE)
+                    </h6>
+                    <div><img src="assets/images/IjseLogo.png" alt="IjseLogo" width="40" usemap="#myMap">
+                        <h6><a href="https://ijse.lk/">View Institute </a></h6>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets\images\IntellijIdeaLogo.png" alt="an image" usemap="#myMap">
-                </div>
-                <div>
-                    <img src="assets\images\MysqlLogo.png" alt="an image" usemap="#myMap">
-                </div>
-                <div>
-                    <img src="assets\images\PythonLogo.png" alt="an image" usemap="#myMap">
-                </div>
-                <div>
-                    <img src="assets/images/Arduino.jpg" alt="an image" usemap="#myMap">
-                </div>
-                <div>
-                    <img src="assets/images/FigmaLogo.png" alt="an image" usemap="#myMap">
-                </div>
-                <div>
-                    <img src="assets/images/SceneBuilderLogo.png" alt="an image" usemap="#myMap">
-                </div>
+            </section>
+            <section>
+                <h3>Languages and tools</h3>
+                <section>
+                    <div>
+                        <img src="assets\images\JavaLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets\images\CSSLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets\images\HtmlLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets\images\IntellijIdeaLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets\images\MysqlLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets\images\PythonLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets/images/Arduino.jpg" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets/images/FigmaLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                    <div>
+                        <img src="assets/images/SceneBuilderLogo.png" alt="an image" usemap="#myMap">
+                    </div>
+                </section>
+
             </section>
 
         </section>
 
-    </section>
-    <section>
-        <div><h2> Project </h2></div>
-
         <section>
-            <div>
-                <img src="assets/images/Project1.png" alt="an image" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/Project2.png" alt="an image" width="250" height="100" usemap="#myMap">
-                <figure>
-                    <figcaption>
-                        This is the project i did for a Library in our town.i was able to complete <br>
-                        this project in two weeks. Bill record management,email management,<br>
-                        data management are included in this project.
-                    </figcaption>
-                </figure>
-            </div>
-            <div>
-                <img src="assets/images/Project3.png" alt="an image" width="100" height="50" usemap="#myMap">
-            </div>
-        </section>
-    </section>
+            <div><h1> Project </h1></div>
 
+            <section>
+                <div>
+                    <img src="assets/images/Project1.png" alt="an image" usemap="#myMap">
+                </div>
+                <div>
+                    <img src="assets/images/Project2.png" alt="an image" width="250" usemap="#myMap">
+                    <figure>
+                        <figcaption>
+                            <h6>This is the project i did for a Library in our town.i was able to complete <br>
+                                this project in two weeks. Bill record management,email management,<br>
+                                data management are included in this project.</h6>
 
-    <section>
-        <div><h1> Assignment </h1></div>
-        <section>
-            <div>
-                <img src="assets\images\A1.jpg" alt="an image" width="50" height="50" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/A2.jpg" alt="an image" width="50" height="50" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/A3.jpg" alt="an image" width="50" height="50" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/A4.jpg" alt="an image" width="50" height="50" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/A5.jpg" alt="an image" width="50" height="50" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/A6.jpg" alt="an image" width="50" height="50" usemap="#myMap">
-            </div>
-        </section>
-    </section>
-
-    <section>
-        <div><h1>Contact me</h1></div>
-
-        <section>
-            <img src="assets\images\Contact.jpg" alt="an image" width="200" height="200" usemap="#myMap">
-            <h3>Do you have any <br>
-                question?
-            </h3>
-            <div>
-                <address>
-                    <h4>Phone Number</h4>
-                    <p>Phone: <a href="tel:(+94)762805151">(+94)762805151</a></p>
-
-                    <h4>Email Address</h4>
-                    <p>Email: <a href="hasithanavodya@gmail.com">hasithanavodya@gmail.com</a></p>
-                </address>
-            </div>
-            <div>
-                <h4> Find me </h4>
-                <img src="assets/images/Wel2.png" alt="an image" width="60" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/Wel3.png" alt="an image" width="60" usemap="#myMap">
-            </div>
-            <div>
-                <img src="assets/images/Wel4.png" alt="an image" width="60" usemap="#myMap">
-            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <img src="assets/images/Project3.png" alt="an image" width="100" height="50" usemap="#myMap">
+                </div>
+            </section>
         </section>
 
         <section>
-            <form action="">
-                <fieldset>
-                    <label for="">Your Name</label><br>
-                    <input type="text" placeholder="Your Name"><br>
-                    <label for="">Phone Number</label><br>
-                    <input type="tel" placeholder="Phone Number" required><br>
-                    <label for="">Email</label><br>
-                    <input type="email" placeholder="Email" required><br>
-                    <label for="">Your Message</label><br>
-                    <textarea name="Message" id="" cols="30" rows="10"></textarea><br>
-                    <button type="submit">Send</button>
-                </fieldset>
-            </form>
+            <div><h1> Assignment </h1></div>
+            <section>
+                <div>
+                    <img src="assets\images\A1.jpg" alt="an image" usemap="#myMap">
+                </div>
+                <div>
+                    <img src="assets/images/A2.jpg" alt="an image" width="50" height="50" usemap="#myMap">
+                </div>
+                <div>
+                    <img src="assets/images/A3.jpg" alt="an image" width="50" height="50" usemap="#myMap">
+                </div>
+                <div>
+                    <img src="assets/images/A4.jpg" alt="an image" width="50" height="50" usemap="#myMap">
+                </div>
+                <div>
+                    <img src="assets/images/A5.jpg" alt="an image" width="50" height="50" usemap="#myMap">
+                </div>
+                <div>
+                    <img src="assets/images/A6.jpg" alt="an image" width="50" height="50" usemap="#myMap">
+                </div>
+            </section>
         </section>
-    </section>
-</main>
-<footer>
-    <nav>
-        <div>
+
+        <section>
+            <div><h1>Contact me</h1></div>
+
+            <section>
+
+                <section>
+
+                    <img src="assets\images\Contact.jpg" alt="an image" usemap="#myMap">
+                    <h3>Do you have any <br>
+                        question?
+                    </h3>
+                    <div>
+                        <address>
+                            <p><span class="address_span">Phone:</span> <a href="tel:(+94)762805151">(+94)762805151</a></p>
+                            <p><span class="address_span">Email:</span> <a href="hasithanavodya@gmail.com">hasithanavodya@gmail.com</a></p>
+                        </address>
+                    </div>
+                    <h4> Find me </h4>
+                    <section>
+                        <div>
+                            <a href="https://web.facebook.com/hasitha.navodya.754/"><img src="assets/images/Wel2.png" alt="FacebookLogo" usemap="#myMap"></a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/HasithaNavodya"><img src="assets/images/Wel3.png" alt="GithubLogo" usemap="#myMap"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/hasitha-navodya-a2297b267/"><img src="assets/images/Wel4.png" alt="LinkedInLogo" usemap="#myMap"></a>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <form action="" method="post">
+                        <div>
+                            <label>Your Name</label><br>
+                            <input type="text" placeholder="" fdprocessedid="eapj7"><br>
+                        </div>
+                        <div>
+                            <label>Phone Number</label><br>
+                            <input type="tel" placeholder="" fdprocessedid="k5kbbw"><br>
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="">
+                        </div>
+                        <div>
+                            <label>Your Message</label><br>
+                            <textarea placeholder="Message" name="message"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Submit" fdprocessedid="3bo0o">
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <nav>
             <div>
-                <ul>
-                    <li>
-                        <a href="">About me</a>
-                    </li>
-                    <li>
-                        <a href="">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="">Education</a>
-                    </li>
-                    <li>
-                        <a href="">Project</a>
-                    </li>
-                </ul>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="">About me</a>
+                        </li>
+                        <li>
+                            <a href="">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="">Education</a>
+                        </li>
+                        <li>
+                            <a href="">Project</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="">Assignment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="display:flex">
+            <div>
+                <a href="https://web.facebook.com/hasitha.navodya.754/"><img src="assets/images/Wel2.png" alt="FacebookLogo"  usemap="#myMap"></a>
             </div>
             <div>
-                <ul>
-                    <li>
-                        <a href="">Assignment</a>
-                    </li>
-                </ul>
+                <a href="https://github.com/HasithaNavodya"><img src="assets/images/Wel3.png" alt="GithubLogo"  usemap="#myMap"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/hasitha-navodya-a2297b267/"><img src="assets/images/Wel4.png" alt="LinkedInLogo"  usemap="#myMap"></a>
             </div>
         </div>
-    </nav>
-    <div>
-        <div>
-            <img src="assests/images/Wel2.png" alt="an image" width="60" usemap="#myMap">
-        </div>
-        <div>
-            <img src="assests/images/Wel3.png" alt="an image" width="60" usemap="#myMap">
-        </div>
-        <div>
-            <img src="assests/images/Wel4.png" alt="an image" width="60" usemap="#myMap">
-        </div>
-    </div>
-
-    <cite>
-        Designed and Developed by Hasitha Navodya.
-    </cite>
-    <small>
-        <br>
-        Copyright © 2023 - Hasitha Navodya All Rights Reserved.
-    </small>
-</footer>
-
-
+        <cite>
+            Designed and Developed by Hasitha Navodya.
+        </cite>
+        <small>
+            <br>
+            Copyright © 2023 - Hasitha Navodya All Rights Reserved.
+        </small>
+    </footer>
 </body>
 </html>
