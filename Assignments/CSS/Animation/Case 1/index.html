@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Case 1</title>
+    <style>
+        section{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        section>div{
+            height: 100px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: blue;
+
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+            margin: auto;
+
+            animation:anima;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes anima {
+            0%{
+                top: 10vh;
+                left: 10vw;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+            12%{
+                top: 10vh;
+                left: 80vw;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            24%{
+                top: 80vh;
+                left: 80vw;
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            36%{
+                top: 80vh;
+                left: 10vw;
+                transform: rotate(180deg);
+                background-color: deeppink;
+            }
+            48%{
+                top: 10vh;
+                left: 10vw;
+                transform: rotate(0deg);
+                background-color: orange;
+            }
+            60%{
+                top: 80vh;
+                left: 10vw;
+                transform: rotate(180deg);
+                background-color: deeppink;
+            }
+            72%{
+                top: 80vh;
+                left: 80vw;
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            84%{
+                top: 10vh;
+                left: 80vw;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            96%{
+                top: 10vh;
+                left: 10vw;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
