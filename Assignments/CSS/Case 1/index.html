@@ -6,222 +6,226 @@
     <link rel="stylesheet" href="assets/normalize.css">
     <title>Case 1</title>
     <style>
-        section>section:first-child{
-            background-color: red;
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-            left: 0%;
-            top: 0%;
-        }
-        section>section:nth-child(2){
-            background-color: green;
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-            right: 0%;
-            top: 0%;
-        }
-        section>section:nth-child(3){
-            background-color: yellow;
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-            left: 0%;
-            bottom: 0%;
-        }
-        section>section:nth-child(4){
-            background-color: deeppink;
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-            right: 0%;
-            bottom: 0%;
-        }
-        section>div:nth-child(5){
-            background-color: white;
-            width: 150px;
-            height: 150px;
-            position: absolute;
-            margin: auto;
-            right: 0%;
-            bottom: 0%;
-            left: 0%;
-            top: 0%;
-        }
-        section>div:nth-child(5)>div{
-            background-color: red;
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            margin: auto;
-            border-radius: 90px;
-            right: 0%;
-            bottom: 0%;
-            left: 0%;
-            top: 0%;
-        }
-        section>section>div:first-child{
-            width: 150px;
-            height: 150px;
-            background-color: white;
-            border-radius: 90px;
-            margin: auto;
-            position: absolute;
-            right: 0%;
-            bottom: 0%;
-            left: 0%;
-            top: 0%;
-        }
-        section>section>div:nth-child(2){
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            margin: auto;
-            position: absolute;
-            right: 0%;
-            bottom: 0%;
-            left: 0%;
-            top: 0%;
-        }
-        section>section:first-child>div:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-bottom-right-radius: 90px;
-            left: 0%;
-            top: 0%;
-        }
-        section>section:nth-child(2)>div:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-bottom-left-radius: 90px;
-            right: 0%;
-            top: 0%;
-        }
-        section>section:nth-child(3)>div:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-top-right-radius: 90px;
-            left: 0%;
-            bottom: 0%;
-        }
-        section>section:nth-child(4)>div:nth-child(3){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-top-left-radius: 90px;
-            right: 0%;
-            bottom: 0%;
-        }
-        section>section:first-child>div:nth-child(4){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-bottom-left-radius: 90px;
-            right: 0%;
-            top: 0%;
-        }
-        section>section:nth-child(2)>div:nth-child(4){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-bottom-right-radius: 90px;
-            left: 0%;
-            top: 0%;
-        }
-        section>section:nth-child(3)>div:nth-child(4){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-top-left-radius: 90px;
-            right: 0%;
-            bottom: 0%;
-        }
-        section>section:nth-child(4)>div:nth-child(4){
-            width: 80px;
-            height: 80px;
-            background-color: white;
-            position: absolute;
-            border-top-right-radius: 90px;
-            left: 0%;
-            bottom: 0%;
-        }
-        .Section {
+        body>section{
+            width: 100vw;
+            height: 100vh;
             position: relative;
-            height: 100vh; 
+        }
+
+        body>section>section{
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        section:nth-child(1){
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+
+        section:nth-child(2){
+            background-color: green;
+            right: 0;
+            top: 0;
+        }
+
+        section:nth-child(3){
+            background-color: yellow;
+            bottom: 0;
+            left: 0;
+        }
+
+        section:nth-child(4){
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
+        section>section>div{
+            background-color: white;
+            height: 40%;
+            width: 20%;
+            border-radius: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        section>div>div{
+            background-color: red;
+            height: 40%;
+            width: 40%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        section>div{
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+        }
+
+        body>section>div:nth-child(5){
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+
+        body>section>div:nth-child(6){
+            margin: auto;
+            left: 0;
+            top: 0;
+            height: 120px;
+            width: 120px;
+
+            border-bottom-right-radius: 100%;
+        }
+
+        body>section>div:nth-child(7){
+            margin: auto;
+            right: 0;
+            top: 0;
+            height: 120px;
+            width: 120px;
+            border-bottom-left-radius: 100%;
+        }
+
+        body>section>div:nth-child(8){
+            margin: auto;
+            right: 0;
+            bottom: 0;
+            height: 120px;
+            width: 120px;
+            border-top-left-radius: 100%;
+        }
+
+        body>section>div:nth-child(9){
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            height: 120px;
+            width: 120px;
+            border-top-right-radius: 100%;
+        }
+
+        body>section>div:nth-child(10){
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            border-top-right-radius: 120px;
+            border-top-left-radius: 120px;
+        }
+
+        body>section>div:nth-child(11){
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100px;
+            border-bottom-right-radius: 120px;
+            border-bottom-left-radius: 120px;
+        }
+
+        body>section>div:nth-child(5)>div{
+            background-color: red;
+            height: 120px;
+            width: 120px;
+            border-radius: 100%;
         }
     </style>
 </head>
 <body>
-    <section class="Section">
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    <section class="Section">
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-        <div>
-            <div></div>
-        </div>
-    </section>
-    
 
+<section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <div>
+        <div></div>
+    </div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+
+<section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <div>
+        <div></div>
+    </div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
 </body>
 </html>

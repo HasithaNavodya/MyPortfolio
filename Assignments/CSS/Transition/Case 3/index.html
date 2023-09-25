@@ -10,70 +10,81 @@
 
 
     <Style>
-        body>div{
-            width: 400px;
-            height: 400px;
-            border: 5px solid grey;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-            background: url("Car.jpg");
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
+        body {
+            background-color: rgb(16, 87, 90);
+            position: relative;
+            height: 100vh;
+            width: 100%;
         }
 
-        div>div{
-            width: 400px;
-            height:400px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            background-color: grey;
-            transition-duration: 4s;
-            transition-property: all;
-
-        }
-
-        body>div:hover div{
-            transition-duration: 4s;
-            transition-property: all;
-            top: 0;
-            opacity: 0.4;
-        }
-
-        div>i{
+        body>section {
+            background-color: rgb(90, 16, 57);
             width: max-content;
             height: max-content;
-            font-size: 200px;
-            color: white;
             position: absolute;
-            left: 0;
-            bottom: 100%;
-            right: 0;
             margin: auto;
-            transition-duration: 4s;
-            transition-property: all;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow-y: hidden;
         }
 
-        body>div:hover i{
-            transition-duration: 4s;
-            transition-property: all;
-            bottom: 50%;
+        body>section>div:first-child{
+            z-index: 7;
         }
-    </Style>
+
+        body>section>div:first-child>img {
+            width: 500px;
+            height: 350px;
+            border: 2px solid white;
+        }
+        body>section>div>a>img {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: -50px;
+            height: 50px;
+        }
+
+        body>section>div:first-child:hover div {
+            height: 350px;
+            transition-duration: 1s;
+            transition-property: height;
+        }
+
+        body>section>div:hover a>img {
+            top: 45%;
+            transition-duration: 1s;
+            transition-property: top;
+        }
+
+
+        body>section>div:first-child>div {
+            border: 2px solid white;
+            height: 0px;
+            background-color: black;
+            position: absolute;
+            margin: auto;
+            opacity: 40%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+    </style>
 </head>
 
 <body>
-
-<div>
+<section>
     <div>
-
+        <img src="assets/image/3d-car-with-vibrant-colors.jpg" alt="">
+        <a href="">
+            <img src="Car.jpg" alt="">
+        </a>
+        <div></div>
     </div>
-    <i class="fa fa-trash"></i>
-</div>
+</section>
+</body>
+</html>
