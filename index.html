@@ -290,8 +290,10 @@
         main > section:nth-child(3) {
             background-color: white;
             filter: saturate(1.4);
-            height: 160vh;
+            height: 100vh;
         }
+
+
 
         main > section:nth-child(3) > div:nth-child(2) > img {
             top: 15%;
@@ -307,18 +309,47 @@
             border-radius: 5%;
         }
 
-        main > section:nth-child(3) > div:nth-child(4) > img {
+        main > section:nth-child(3) > div:nth-child(4){
+            animation-name: shadowchildfiveshadowfive;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            box-shadow: 0px 0px 1px 5px black;
+        }
+
+        main > section:nth-child(3) > div:last-child > img {
             position: absolute;
             left: 50%;
             top: 62%;
             border-radius: 5%;
         }
 
+        @keyframes shadowchildfiveshadowfive {
+            0% {
+                box-shadow: 0px 0px 1px 5px rgb(69, 20, 67);
+            }
+
+            25% {
+                box-shadow: -5px 0px 1px 5px rgb(69, 20, 67);
+            }
+
+            50% {
+                box-shadow: 5px 0px 1px 5px rgb(69, 20, 67);
+            }
+
+            75% {
+
+                box-shadow: -5px 0px 1px 0px rgb(69, 20, 67);
+            }
+
+            100% {
+                box-shadow: 0px 0px 1px 0px rgb(69, 20, 67);
+            }
+        }
+
         /*Section 04*/
 
         main > section:nth-child(4) > section:nth-child(2) {
-
-
             position: relative;
             height: 60vh;
 
@@ -431,13 +462,82 @@
 
         main > section:nth-child(4) > section:nth-child(3) > section > div {
 
-            width: 5%;
-            height: max-content;
+           display: none;
         }
 
         main > section:nth-child(4) > section:nth-child(3) > section > div > img {
-            width: 100%;
+            display: none;
+        }
 
+        main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
+            position: absolute;
+            width: 26%;
+            height: 77%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: url(assets/images/JavaLogo.png);
+            animation: slideimage 20s infinite;
+            background-size: 100% 100%;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        @keyframes slideimage {
+            0% {
+
+                background: url(assets/images/JavaLogo.png);
+                background-size: 100% 100% ;
+            }
+
+            11% {
+
+                background: url(assets/images/CSSLogo.png);
+                background-size: 100% 100%;
+            }
+
+            22% {
+                background: url(assets/images/HtmlLogo.png);
+                background-size: 100% 100%;
+            }
+
+            33% {
+
+                background: url(assets/images/IntellijIdeaLogo.png);
+                background-size: 100% 100%;
+            }
+
+            44% {
+
+                background: url(assets/images/MysqlLogo.png);
+                background-size: 100% 100%;
+            }
+
+            55%{
+                background: url(assets/images/PythonLogo.png);
+                background-size: 100% 100% ;
+            }
+
+            66%{
+                background: url(assets/images/Arduino.jpg);
+                background-size: 100% 100% ;
+            }
+            77%{
+                background: url(assets/images/FigmaLogo.png);
+                background-size: 100% 100% ;
+            }
+
+            88%{
+                background: url(assets/images/SceneBuilderLogo.png);
+                background-size: 100% 100%
+            }
+
+            99%{
+                background: url(assets/images/JavaLogo.png);
+                background-size: 100% 100% ;
+            }
         }
 
 
@@ -696,10 +796,513 @@
             text-align: center;
         }
 
-        @media header {
 
+        @media (min-width :320px) and (max-width: 1024px){
+            /*section 01*/
+            main > section:first-child > div > div:first-child > img {
+                border-radius: 200%;
+                width: 72%;
+                height: 40%;
+                top: 0;
+                bottom: 63%;
+                right: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+            }
+
+            main > section:first-child > section {
+                top: 222px;
+                left: 0;
+                right: 0;
+                font-size: 28px;
+                position: relative;
+                /* height: 6%; */
+                margin: auto;
+                bottom: 0;
+                text-align: center;
+            }
+
+            main > section:first-child > section > h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+
+            main > section:first-child > section > h4 {
+                font-size: 31px;
+            }
+
+            main > section:first-child > section > h5 {
+                font-size: 16px;
+                top: 161px;
+            }
+
+            main > section:first-child > section > h6 {
+                font-size: 15px;
+            }
+
+            main > section:first-child > section > button {
+                background-color: #EF6C00;
+                color: black;
+                width: 100px;
+                height: 32px;
+                border: 30px;
+                font-weight: bold;
+                font-size: 16px;
+                top: 834%;
+                position: absolute;
+                box-shadow: 0px 3px 6px 0px rgb(64, 12, 28);
+                left: 0;
+                border-radius: 10%;
+                right: 0;
+                bottom: 0;
+                /* top: 0; */
+                margin: auto;
+            }
+
+            main > section:first-child > div > section {
+                display: flex;
+                position: absolute;
+                left: 31%;
+                top: 93%;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            main > section:first-child > div > section>div:first-child> a>img {
+                 top: 0;
+                 left: -2%;
+                 position: absolute;
+            }
+
+            main > section:first-child > div > section>div:nth-child(2)> a>img {
+                top: 0;
+                left: 20%;
+                position: absolute;
+            }
+
+            main > section:first-child > div > section>div:last-child> a>img {
+                top: 0;
+                left: 41%;
+                position: absolute;
+            }
+
+            /*section 02*/
+            main > section:nth-child(2) {
+                background-color: white;
+                filter: saturate(1.4);
+                height: 157vh;
+            }
+
+
+            main > section:nth-child(2) > div:nth-child(2) > div > img {
+                background-color: #d70a0a;
+                border-color: #f90c0c;
+                border-radius: 200%;
+                width: 67%;
+                height: 30%;
+                top: -38%;
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
+            main > section:nth-child(2) > section > article > p {
+                position: absolute;
+                font-size: 20px;
+                left: 0;
+                top: 54%;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                color: #757575;
+                text-align: center;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(2) {
+                left: 0;
+                position: absolute;
+                top: 72%;
+                color: #757575;
+                text-align: center;
+                right: 0;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(3) {
+                left: 0;
+                position: absolute;
+                top: 74%;
+                color: #757575;
+                text-align: center;
+                right: 34%;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(4) {
+                left: 0;
+                position: absolute;
+                top: 76%;
+                color: #757575;
+                right: 0;
+                text-align: center;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(5) {
+                left: 0;
+                position: absolute;
+                top: 78%;
+                color: #757575;
+                right: 3%;
+                text-align: center;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(6) {
+                left: 2%;
+                position: absolute;
+                top: 80%;
+                color: #757575;
+                right: 0;
+                text-align: center;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(7) {
+                left: 19%;
+                position: absolute;
+                top: 82%;
+                color: #757575;
+                right: 0;
+                text-align: center;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(8) {
+                left: 4%;
+                position: absolute;
+                top: 84%;
+                color: #757575;
+                text-align: center;
+                right: 0;
+                bottom: 0;
+            }
+
+            main > section:nth-child(2) > section > li:nth-child(9) {
+                left: -4%;
+                position: absolute;
+                top: 86%;
+                color: #757575;
+                right: 0;
+                text-align: center;
+                bottom: 0;
+            }
+
+            /*section 03*/
+            main > section:nth-child(3) > div:nth-child(2) > img {
+                display: none;
+            }
+
+            main > section:nth-child(3) > div:nth-child(3) > img {
+               display: none;
+            }
+
+            main > section:nth-child(3) > div:last-child > img {
+                display: none;
+            }
+
+            main > section:nth-child(3) > div:nth-child(4) {
+                background-color: red;
+                position: absolute;
+                width: 87%;
+                height: 40%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url(assets/images/Gallery1.jpg);
+                animation: slideimagebig 20s infinite;
+                background-size: 100% 100%;
+                border-radius: 12px;
+
+            }
+
+            @keyframes slideimagebig {
+                0% {
+
+                    background: url(assets/images/Gallery2.jpg);
+                    background-size: 100% 100%;
+                }
+
+                25% {
+
+                    background: url(assets/images/Gallery3.jpg);
+                    background-size: 100% 100%;
+                }
+
+                50% {
+                    background: url(assets/images/Gallery1.jpg);
+                    background-size: 100% 100%;
+                }
+
+                75% {
+
+                    background: url(assets/images/Gallery2.jpg);
+                    background-size: 100% 100%;
+                }
+
+                100% {
+
+                    background: url(assets/images/Gallery3.jpg);
+                    background-size: 100% 100%;
+                }
+            }
+
+            /*section 04*/
+            main > section:nth-child(4) > section:nth-child(2) {
+                position: relative;
+                height: 65vh;
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) > div > div > img {
+                position: absolute;
+                width: 20%;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                left: 7%;
+            }
+
+
+
+            main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(2) {
+                position: absolute;
+                left: 35%;
+                top: 40%;
+                font-size: 8px;
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(3) {
+                position: absolute;
+                left: 35%;
+                top: 60%;
+                font-size: 8px;
+            }
+
+            main > section:nth-child(4) > section:nth-child(3) > section {
+                height: 50%;
+                position: absolute;
+                margin: auto;
+                top: 10%;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            main > section:nth-child(4) > section:nth-child(3) > section > div>img {
+
+                display: none;
+            }
+
+            main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
+                position: absolute;
+                width: 26%;
+                height: 77%;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url(assets/images/JavaLogo.png);
+                animation: slideimage 20s infinite;
+                background-size: 100% 100%;
+                border-radius: 10px;
+                border: 2px solid black;
+            }
+
+            @keyframes slideimage {
+                0% {
+
+                    background: url(assets/images/JavaLogo.png);
+                    background-size: 100% 100% ;
+                }
+
+                11% {
+
+                    background: url(assets/images/CSSLogo.png);
+                    background-size: 100% 100%;
+                }
+
+                22% {
+                    background: url(assets/images/HtmlLogo.png);
+                    background-size: 100% 100%;
+                }
+
+                33% {
+
+                    background: url(assets/images/IntellijIdeaLogo.png);
+                    background-size: 100% 100%;
+                }
+
+                44% {
+
+                    background: url(assets/images/MysqlLogo.png);
+                    background-size: 100% 100%;
+                }
+
+                55%{
+                    background: url(assets/images/PythonLogo.png);
+                    background-size: 100% 100% ;
+                }
+
+                66%{
+                    background: url(assets/images/Arduino.jpg);
+                    background-size: 100% 100% ;
+                }
+                77%{
+                    background: url(assets/images/FigmaLogo.png);
+                    background-size: 100% 100% ;
+                }
+
+                88%{
+                    background: url(assets/images/SceneBuilderLogo.png);
+                    background-size: 100% 100%
+                }
+
+                99%{
+                    background: url(assets/images/JavaLogo.png);
+                    background-size: 100% 100% ;
+                }
+            }
+
+
+            main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+                width: 100%;
+
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) > div > h6 {
+                position: absolute;
+                font-family: "Times New Roman";
+                font-size: 3.1vw;
+                text-align: center;
+                top: 10%;
+                right: 0;
+                left: 0;
+            }
+
+            /*section 05*/
+            main > section:nth-child(5) > section {
+                display: none;
+            }
+
+            main > section:nth-child(5) > section > div > img {
+                display: none;
+            }
+
+
+
+            /*!*section 05*!
+            main > section:nth-child(5) > section {
+                filter: saturate(1.4);
+                position: relative;
+                top: 31px;
+                bottom: 75%;
+                margin: auto;
+                display: grid;
+                grid-template-rows: repeat(1, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                gap: 5vw;
+                width: 84vw;
+                height: 66vh;
+            }
+
+            main > section:nth-child(5) > section > div {
+                margin: auto;
+                border-radius: 20px;
+                border: 2px solid black;
+                text-align: center;
+                font-size: 28px;
+            }
+
+            main > section:nth-child(5) > section > div > img {
+                width: 24vw;
+                height: 54vh;
+                border-radius: 20px;
+            }*/
+
+
+            /*main>section:nth-child(4)>div:last-child {
+                display: none;
+            }
+
+            main>section:nth-child(4)>section {
+                display: none;
+            }
+
+            main>section:nth-child(4)>div:nth-child(4) {
+                position: absolute;
+                background-color: red;
+                left: 0;
+                right: 0;
+                bottom: 3%;
+                width: 27%;
+                height: 15%;
+                margin: auto;
+                background: url(assets/images/icons8-figma-96.png);
+                animation: slideimage 15s infinite;
+            }
+
+            main>section:nth-child(4)>h3 {
+                position: absolute;
+                top: 76%;
+                left: 22vw;
+                right: 22vw;
+                text-align: center;
+                margin: auto;
+                font-size: 20px;
+
+            }
+
+            @keyframes slideimage {
+                0% {
+                    background: url(assets/images/icons8-figma-96.png);
+                }
+
+                25% {
+                    background: url(assets/images/icons8-css-96.png);
+                }
+
+                50% {
+                    background: url(assets/images/icons8-java-100.png);
+                }
+
+                75% {
+
+                    background: url(assets/images/icons8-javascript-96.png);
+                }
+
+                100% {
+                    background: url(assets/images/icons8-figma-96.png);
+                }
+            }*/
+
+            /*section 06*/
+
+            /*section 07*/
 
         }
+
+
+
+
 
 
     </style>
@@ -723,6 +1326,7 @@
     </div>
 </header>
     <main>
+        <!--section 01-->
         <section id="home" >
             <section>
                 <h1>Welcome...</h1>
@@ -753,6 +1357,7 @@
 
         </section>
 
+        <!--section 02-->
         <section id="aboutme">
             <div><h1> About me </h1></div>
 
@@ -781,6 +1386,7 @@
             </section>
         </section>
 
+        <!--section 03-->
         <section id="gallery">
             <div><h1> Gallery </h1></div>
 
@@ -790,11 +1396,13 @@
             <div>
                 <img src="assets/images/Gallery2.jpg" alt="Gallery2" width="450">
             </div>
+            <div></div>
             <div>
                 <img src="assets/images/Gallery3.jpg" alt="Gallery3" width="470">
             </div>
         </section>
 
+        <!--section 04-->
         <section id="education">
             <div><h1> Education </h1></div>
 
@@ -857,12 +1465,14 @@
                     <div>
                         <img src="assets/images/SceneBuilderLogo.png" alt="an image" usemap="#myMap">
                     </div>
+                    <div></div>
                 </section>
 
             </section>
 
         </section>
 
+        <!--section 05-->
         <section id="project">
             <div><h1> Project </h1></div>
 
@@ -872,21 +1482,24 @@
                 </div>
                 <div>
                     <img src="assets/images/Project2.png" alt="an image" width="250" usemap="#myMap">
-                    <figure>
-                        <figcaption>
-                            <h6>This is the project i did for a Library in our town.i was able to complete <br>
-                                this project in two weeks. Bill record management,email management,<br>
-                                data management are included in this project.</h6>
 
-                        </figcaption>
-                    </figure>
                 </div>
+                <figure>
+                    <figcaption>
+                        <h6>This is the project i did for a Library in our town.i was able to complete <br>
+                            this project in two weeks. Bill record management,email management,<br>
+                            data management are included in this project.</h6>
+
+                    </figcaption>
+                </figure>
+
                 <div>
                     <img src="assets/images/Project3.png" alt="an image" width="100" height="50" usemap="#myMap">
                 </div>
             </section>
         </section>
 
+        <!--section 06-->
         <section id="assignment">
             <div><h1> Assignment </h1></div>
             <section>
@@ -911,6 +1524,7 @@
             </section>
         </section>
 
+        <!--section 07-->
         <section id="contact">
             <div><h1>Contact me</h1></div>
 
