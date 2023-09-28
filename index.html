@@ -31,7 +31,7 @@
             z-index: 3;
         }
 
-        header > div {
+        header > div:first-child {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -502,20 +502,20 @@
         }
 
         main > section:nth-child(5) > section > div:first-child > img:first-child{
-            width: 24vw;
-            height: 54vh;
+            /*width: 24vw;*/
+            /*height: 54vh;*/
             border-radius: 20px;
         }
 
         main > section:nth-child(5) > section > div:nth-child(2) > img:nth-child(2){
-            width: 24vw;
-            height: 54vh;
+            /*width: 24vw;*/
+            /*height: 54vh;*/
             border-radius: 20px;
         }
 
         main > section:nth-child(5) > section > div:last-child > img:last-child{
-            width: 24vw;
-            height: 54vh;
+            /*width: 24vw;*/
+            /*height: 54vh;*/
             border-radius: 20px;
         }
 
@@ -752,6 +752,12 @@
         @media (min-width :320px) and (max-width: 375px){
             header > div > nav > ul {
                 display: none;
+            }
+
+            header>div:last-child{
+                position: absolute;
+                right: 0;
+                top: 0;
             }
             /*section 01*/
             main > section:first-child > div > div:first-child > img {
@@ -2214,6 +2220,9 @@
             </ul>
         </nav>
     </div>
+    <div>
+        <img src="assets/images/icons8-menu-64 .png"  alt="Menu" width="53">
+    </div>
 </header>
     <main>
         <!--section 01-->
@@ -2385,7 +2394,7 @@
                 <div></div>
 
                 <div>
-                    <img src="assets/images/Project3.png" alt="an image" width="100" height="50" usemap="#myMap">
+                    <img src="assets/images/Project3.png" alt="an image" usemap="#myMap">
                 </div>
 
 
