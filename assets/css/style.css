@@ -318,7 +318,7 @@ main > section:nth-child(3) > div:nth-child(4) {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: url(assets/images/Gallery1.jpg);
+    background: url(../images/Gallery1.jpg);
     animation: slideimagebig 20s infinite;
     background-size: 100% 100%;
     border-radius: 12px;
@@ -328,30 +328,30 @@ main > section:nth-child(3) > div:nth-child(4) {
 @keyframes slideimagebig {
     0% {
 
-        background: url(assets/images/Gallery2.jpg);
+        background: url(../images/Gallery2.jpg);
         background-size: 100% 100%;
     }
 
     25% {
 
-        background: url(assets/images/Gallery3.jpg);
+        background: url(../images/Gallery3.jpg);
         background-size: 100% 100%;
     }
 
     50% {
-        background: url(assets/images/Gallery1.jpg);
+        background: url(../images/Gallery1.jpg);
         background-size: 100% 100%;
     }
 
     75% {
 
-        background: url(assets/images/Gallery2.jpg);
+        background: url(../images/Gallery2.jpg);
         background-size: 100% 100%;
     }
 
     100% {
 
-        background: url(assets/images/Gallery3.jpg);
+        background: url(../images/Gallery3.jpg);
         background-size: 100% 100%;
     }
 }
@@ -511,7 +511,7 @@ main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
     top: 0;
     bottom: 0;
     margin: auto;
-    background: url(assets/images/JavaLogo.png);
+    background: url(../images/JavaLogo.png);
     animation: slideimage 20s infinite;
     background-size: 100% 100%;
     border-radius: 10px;
@@ -521,54 +521,54 @@ main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
 @keyframes slideimage {
     0% {
 
-        background: url(assets/images/JavaLogo.png);
+        background: url(../images/JavaLogo.png);
         background-size: 100% 100% ;
     }
 
     11% {
 
-        background: url(assets/images/CSSLogo.png);
+        background: url(../images/CSSLogo.png);
         background-size: 100% 100%;
     }
 
     22% {
-        background: url(assets/images/HtmlLogo.png);
+        background: url(../images/HtmlLogo.png);
         background-size: 100% 100%;
     }
 
     33% {
 
-        background: url(assets/images/IntellijIdeaLogo.png);
+        background: url(../images/IntellijIdeaLogo.png);
         background-size: 100% 100%;
     }
 
     44% {
 
-        background: url(assets/images/MysqlLogo.png);
+        background: url(../images/MysqlLogo.png);
         background-size: 100% 100%;
     }
 
     55%{
-        background: url(assets/images/PythonLogo.png);
+        background: url(../images/PythonLogo.png);
         background-size: 100% 100% ;
     }
 
     66%{
-        background: url(assets/images/Arduino.jpg);
+        background: url(../images/Arduino.jpg);
         background-size: 100% 100% ;
     }
     77%{
-        background: url(assets/images/FigmaLogo.png);
+        background: url(../images/FigmaLogo.png);
         background-size: 100% 100% ;
     }
 
     88%{
-        background: url(assets/images/SceneBuilderLogo.png);
+        background: url(../images/SceneBuilderLogo.png);
         background-size: 100% 100%
     }
 
     99%{
-        background: url(assets/images/JavaLogo.png);
+        background: url(../images/JavaLogo.png);
         background-size: 100% 100% ;
     }
 }
@@ -616,7 +616,7 @@ main > section:nth-child(5) > section > div:nth-child(4) {
     top: 20px;
     bottom: 0;
     margin: auto;
-    background: url(assets/images/Project1.png);
+    background: url(../images/Project1.png);
     animation: slideimage2 20s infinite;
     background-size: 100% 100%;
     border-radius: 10px;
@@ -625,32 +625,32 @@ main > section:nth-child(5) > section > div:nth-child(4) {
 
 @keyframes slideimage2 {
     0% {
-        background: url(assets/images/Project1.png);
+        background: url(../images/Project1.png);
         background-size: 100% 100%;
     }
 
     20% {
-        background: url(assets/images/Project2.png);
+        background: url(../images/Project2.png);
         background-size: 100% 100%;
     }
 
     40% {
-        background: url(assets/images/Project3.png);
+        background: url(../images/Project3.png);
         background-size: 100% 100%;
     }
 
     60% {
-        background: url(assets/images/Project1.png);
+        background: url(../images/Project1.png);
         background-size: 100% 100%;
     }
 
     80% {
-        background: url(assets/images/Project2.png);
+        background: url(../images/Project2.png);
         background-size: 100% 100%;
     }
 
     100% {
-        background: url(assets/images/Project3.png);
+        background: url(../images/Project3.png);
         background-size: 100% 100%;
     }
 }
@@ -907,4 +907,2065 @@ body > footer > small {
     position: absolute;
     font-size: 12px;
     text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    header > div > nav > ul {
+        display: none;
+    }
+
+    header > div:last-child {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flow;
+    }
+
+    /*section 01*/
+    main > section:first-child > div > div:first-child > img {
+        border-radius: 200%;
+        width: 67%;
+        height: 46%;
+        top: 0;
+        bottom: 63%;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    main > section:first-child > section {
+        top: 222px;
+        left: 0;
+        right: 0;
+        font-size: 28px;
+        position: relative;
+        /* height: 6%; */
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+    }
+
+    main > section:first-child > section > h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    main > section:first-child > section > h4 {
+        font-size: 31px;
+    }
+
+    main > section:first-child > section > h5 {
+        font-size: 16px;
+        top: 161px;
+    }
+
+    main > section:first-child > section > h6 {
+        font-size: 15px;
+    }
+
+    main > section:first-child > section > button {
+        background-color: #EF6C00;
+        color: black;
+        width: 100px;
+        height: 32px;
+        border: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        top: 834%;
+        position: absolute;
+        box-shadow: 0px 3px 6px 0px rgb(64, 12, 28);
+        left: 0;
+        border-radius: 10%;
+        right: 0;
+        bottom: 0;
+        /* top: 0; */
+        margin: auto;
+    }
+
+    main > section:first-child > div > section {
+        display: flex;
+        position: absolute;
+        left: 31%;
+        top: 93%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    main > section:first-child > div > section > div:first-child > a > img {
+        top: 0;
+        left: -2%;
+        position: absolute;
+    }
+
+    main > section:first-child > div > section > div:nth-child(2) > a > img {
+        top: 0;
+        left: 20%;
+        position: absolute;
+    }
+
+    main > section:first-child > div > section > div:last-child > a > img {
+        top: 0;
+        left: 41%;
+        position: absolute;
+    }
+
+    /*section 02*/
+    main > section:nth-child(2) {
+        background-color: white;
+        filter: saturate(1.4);
+        height: 157vh;
+    }
+
+
+    main > section:nth-child(2) > div:nth-child(2) > div > img {
+        background-color: #d70a0a;
+        border-color: #f90c0c;
+        border-radius: 200%;
+        width: 67%;
+        height: 30%;
+        top: -38%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main > section:nth-child(2) > section > article > p {
+        position: absolute;
+        font-size: 20px;
+        left: 0;
+        top: 54%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        color: #757575;
+        text-align: center;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(2) {
+        left: 0;
+        position: absolute;
+        top: 72%;
+        color: #757575;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(3) {
+        left: 0;
+        position: absolute;
+        top: 74%;
+        color: #757575;
+        text-align: center;
+        right: 34%;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(4) {
+        left: 0;
+        position: absolute;
+        top: 76%;
+        color: #757575;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(5) {
+        left: 0;
+        position: absolute;
+        top: 78%;
+        color: #757575;
+        right: 3%;
+        text-align: center;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(6) {
+        left: 2%;
+        position: absolute;
+        top: 80%;
+        color: #757575;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(7) {
+        left: 19%;
+        position: absolute;
+        top: 82%;
+        color: #757575;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(8) {
+        left: 4%;
+        position: absolute;
+        top: 84%;
+        color: #757575;
+        text-align: center;
+        right: 0;
+        bottom: 0;
+    }
+
+    main > section:nth-child(2) > section > li:nth-child(9) {
+        left: -4%;
+        position: absolute;
+        top: 86%;
+        color: #757575;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+    }
+
+
+    /*section 03*/
+    main > section:nth-child(3) > div:nth-child(2) > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:last-child > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:nth-child(4) {
+        background-color: red;
+        position: absolute;
+        width: 87%;
+        height: 40%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/Gallery1.jpg);
+        animation: slideimagebig 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 12px;
+
+    }
+
+    @keyframes slideimagebig {
+        0% {
+
+            background: url(../images/Gallery2.jpg);
+            background-size: 100% 100%;
+        }
+
+        25% {
+
+            background: url(../images/Gallery3.jpg);
+            background-size: 100% 100%;
+        }
+
+        50% {
+            background: url(../images/Gallery1.jpg);
+            background-size: 100% 100%;
+        }
+
+        75% {
+
+            background: url(../images/Gallery2.jpg);
+            background-size: 100% 100%;
+        }
+
+        100% {
+
+            background: url(../images/Gallery3.jpg);
+            background-size: 100% 100%;
+        }
+    }
+
+    /*section 04*/
+
+    main > section:nth-child(4) > section:nth-child(2) {
+        position: relative;
+        height: 65vh;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > img {
+        position: absolute;
+        width: 20%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 7%;
+    }
+
+
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(2) {
+        position: absolute;
+        left: 35%;
+        top: 40%;
+        font-size: 8px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(3) {
+        position: absolute;
+        left: 35%;
+        top: 60%;
+        font-size: 8px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section {
+        height: 50%;
+        position: absolute;
+        margin: auto;
+        top: 10%;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div>img {
+
+        display: none;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
+        position: absolute;
+        width: 26%;
+        height: 77%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/JavaLogo.png);
+        animation: slideimage 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    @keyframes slideimage {
+        0% {
+
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100% ;
+        }
+
+        11% {
+
+            background: url(../images/CSSLogo.png);
+            background-size: 100% 100%;
+        }
+
+        22% {
+            background: url(../images/HtmlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        33% {
+
+            background: url(../images/IntellijIdeaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        44% {
+
+            background: url(../images/MysqlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        55%{
+            background: url(../images/PythonLogo.png);
+            background-size: 100% 100% ;
+        }
+
+        66%{
+            background: url(../images/Arduino.jpg);
+            background-size: 100% 100% ;
+        }
+        77%{
+            background: url(../images/FigmaLogo.png);
+            background-size: 100% 100% ;
+        }
+
+        88%{
+            background: url(../images/SceneBuilderLogo.png);
+            background-size: 100% 100%
+        }
+
+        99%{
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100% ;
+        }
+    }
+
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+        display: none;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > h6 {
+        position: absolute;
+        font-family: "Times New Roman";
+        font-size: 3.1vw;
+        text-align: center;
+        top: 10%;
+        right: 0;
+        left: 0;
+    }
+
+    /*section 05*/
+    main > section:nth-child(5) > section > div:nth-child(4) {
+        position: absolute;
+        width: 247px;
+        height: 250px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/Project1.png);
+        animation: slideimage2 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    @keyframes slideimage2 {
+        0% {
+
+            background: url(../images/Project1.png);
+            background-size: 100% 100%;
+        }
+
+        20% {
+
+            background: url(../images/Project2.png);
+            background-size: 100% 100%;
+        }
+
+        40% {
+            background: url(../images/Project3.png);
+            background-size: 100% 100%;
+        }
+
+        60% {
+
+            background: url(../images/Project1.png);
+            background-size: 100% 100%;
+        }
+
+        80% {
+
+            background: url(../images/Project2.png);
+            background-size: 100% 100%;
+        }
+
+        100% {
+
+            background: url(../images/Project3.png);
+            background-size: 100% 100%;
+        }
+    }
+
+    main > section:nth-child(5) > section > div {
+        margin: auto;
+        border-radius: 20px;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    main > section:nth-child(5) > section > div > img {
+        display: none;
+    }
+
+    main > section:nth-child(5) > section > figure > figcaption {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 91%;
+    }
+
+    /*section 06*/
+    main > section:nth-child(6) {
+        position: relative;
+        height: 205vh;
+        filter: saturate(1.4);
+    }
+
+    main > section > div:first-child {
+        box-shadow: 0px 0px 3px 0px #6b5a5a;
+        height: 60px;
+        width: 100%;
+        background: white;
+        position: sticky;
+        top: 53px;
+        background-color: #EF6C00;
+        /* border-radius: 0px 15px 15px 0px; */
+        z-index: 2;
+        text-align: center;
+    }
+
+    main > section:nth-child(6) > section {
+        position: relative;
+        top: 31px;
+        bottom: 75%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5vw;
+        /* width: 77vw; */
+    }
+
+    main > section:nth-child(6) > section > div {
+        margin: auto;
+        box-shadow: -22px 18px 18px 6px #757575;
+        text-align: center;
+        font-size: 0px;
+        width: 230px;
+        height: 156px;
+        border-radius: 20px;
+    }
+
+    main > section:nth-child(6) > section > div > img {
+        position: relative;
+        top: 24px;
+        width: 193px;
+        height: 114px;
+        border-radius: 20px;
+        bottom: 31vh;
+    }
+
+    main > section:nth-child(6) > div:last-child {
+        position: absolute;
+        right: 5%;
+        bottom: 4%;
+        font-family: cursive;
+        font-size: 116%;
+        bottom: 10px;
+    }
+
+    /*section 07*/
+    main > section:nth-child(7) {
+        position: relative;
+        height: 251vh;
+    }
+
+    main > section:nth-child(7) > section {
+        position: absolute;
+        right: 5vw;
+        left: 5vw;
+        top: 11vh;
+        bottom: 33vh;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 9vw;
+    }
+
+    main > section:nth-child(7) > section > section:first-child {
+        top: -20%;
+        width: 70vw;
+        margin: auto;
+        height: 83vh;
+        border-radius: 10px;
+        box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
+        /* position: absolute; */
+    }
+
+    main > section:nth-child(7) > section > section:first-child > img:first-child {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    main > section:nth-child(7) > section > section {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #191E23;
+        border-radius: 20px;
+        width: 77%;
+        height: 58.5vh;
+        box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) {
+        width: 64%;
+        top: 44%;
+        margin-left: 31px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 20px;
+        row-gap: 5px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div {
+        padding: 10px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > label {
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > input {
+        width: 100%;
+        margin-top: 10px;
+        height: 28px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div {
+        padding: 10px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > label {
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(4) {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(5) {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    /*footer*/
+    body > footer {
+        height: 53px;
+    }
+
+    body > footer > nav {
+        width: 20%;
+        position: relative;
+        left: 47px;
+        top: -60%;
+        display: grid;
+    }
+
+    body > footer > div {
+        width: 40%;
+        position: absolute;
+        left: 160px;
+        top: -60%;
+        justify-content: space-evenly;
+    }
+
+    body > footer > small {
+        width: 100%;
+        top: 21vh;
+        position: absolute;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    body > footer > cite {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 20vh;
+        font-size: 12px;
+    }
+
+    body > footer > div > div > a > img {
+        width: 40px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    /*section 01*/
+    main > section:first-child > div > div:first-child > img {
+        border-radius: 200%;
+        width: 67%;
+        height: 46%;
+        top: 0;
+        bottom: 63%;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    main > section:first-child > section {
+        top: 222px;
+        left: 0;
+        right: 0;
+        font-size: 28px;
+        position: relative;
+        /* height: 6%; */
+        margin: auto;
+        bottom: 0;
+        text-align: center;
+    }
+
+    main > section:first-child > section > h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    main > section:first-child > section > h4 {
+        font-size: 31px;
+    }
+
+    main > section:first-child > section > h5 {
+        font-size: 16px;
+        top: 161px;
+    }
+
+    main > section:first-child > section > h6 {
+        font-size: 15px;
+    }
+
+    main > section:first-child > section > button {
+        background-color: #EF6C00;
+        color: black;
+        width: 100px;
+        height: 32px;
+        border: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        top: 834%;
+        position: absolute;
+        box-shadow: 0px 3px 6px 0px rgb(64, 12, 28);
+        left: 0;
+        border-radius: 10%;
+        right: 0;
+        bottom: 0;
+        /* top: 0; */
+        margin: auto;
+    }
+
+    main > section:first-child > div > section {
+        display: flex;
+        position: absolute;
+        left: 31%;
+        top: 93%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    main > section:first-child > div > section > div:first-child > a > img {
+        top: 0;
+        left: -2%;
+        position: absolute;
+    }
+
+    main > section:first-child > div > section > div:nth-child(2) > a > img {
+        top: 0;
+        left: 20%;
+        position: absolute;
+    }
+
+    main > section:first-child > div > section > div:last-child > a > img {
+        top: 0;
+        left: 41%;
+        position: absolute;
+    }
+
+    /*section 02*/
+    main > section:nth-child(2) {
+        background-color: white;
+        filter: saturate(1.4);
+        height: 146vh;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) > div > img {
+        background-color: #d70a0a;
+        border-color: #f90c0c;
+        border-radius: 200%;
+        width: 75%;
+        height: 36%;
+        top: -40%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main > section:nth-child(2) > section > article > p {
+        position: absolute;
+        font-size: 20px;
+        left: 0;
+        top: 54%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        color: #757575;
+        text-align: center;
+    }
+
+    /*section 03*/
+    main > section:nth-child(3) > div:nth-child(2) > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:last-child > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:nth-child(4) {
+        background-color: red;
+        position: absolute;
+        width: 87%;
+        height: 40%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/Gallery1.jpg);
+        animation: slideimagebig 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 12px;
+
+    }
+
+    @keyframes slideimagebig {
+        0% {
+
+            background: url(../images/Gallery2.jpg);
+            background-size: 100% 100%;
+        }
+
+        25% {
+
+            background: url(../images/Gallery3.jpg);
+            background-size: 100% 100%;
+        }
+
+        50% {
+            background: url(../images/Gallery1.jpg);
+            background-size: 100% 100%;
+        }
+
+        75% {
+
+            background: url(../images/Gallery2.jpg);
+            background-size: 100% 100%;
+        }
+
+        100% {
+
+            background: url(../images/Gallery3.jpg);
+            background-size: 100% 100%;
+        }
+    }
+
+    /*section 04*/
+    main > section:nth-child(4) > section:nth-child(2) > div {
+        width: 114px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div:first-child {
+        left: 18%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) {
+        right: 12%;
+    }
+
+    /*section 05*/
+    main > section:nth-child(5) > section > figure > figcaption > h6 {
+        font-size: 16px;
+    }
+
+    /*section 06*/
+    /*section 07*/
+    main > section:nth-child(7) > section > section:nth-child(2) {
+        width: 66%;
+        top: 44%;
+        margin-left: 36px;
+    }
+
+    /*footer*/
+    body > footer {
+        height: 150px;
+    }
+
+    body > footer > nav {
+        left: 58px;
+        top: 10%;
+    }
+
+    body > footer > div {
+        width: 40%;
+        left: 173px;
+        top: 10%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    /*header*/
+    header > div > nav > ul {
+        display: none;
+    }
+
+    header > div:last-child {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flow;
+    }
+
+    /*section 01*/
+    main > section:first-child > div > div:first-child > img {
+        width: 65%;
+        height: 50%;
+        top: 0;
+        bottom: 64%;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    main > section:first-child > section > button {
+        top: 800%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main > section:first-child > div > section {
+        position: absolute;
+        left: 32%;
+        top: 92%;
+        right: 0;
+    }
+
+    /*section 02*/
+    main > section:nth-child(2) {
+        background-color: white;
+        filter: saturate(1.4);
+        height: 146vh;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) > div > img {
+        background-color: #d70a0a;
+        border-color: #f90c0c;
+        border-radius: 200%;
+        width: 75%;
+        height: 36%;
+        top: -40%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    main > section:nth-child(2) > section > article > p {
+        position: absolute;
+        font-size: 20px;
+        left: 0;
+        top: 54%;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        color: #757575;
+        text-align: center;
+    }
+
+    /*section 03*/
+    /*section 04*/
+    main > section:nth-child(4) > section:nth-child(2) > div > h6 {
+        font-size: 3.1vw;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > img {
+        position: absolute;
+        width: 14%;
+        top: 0;
+        bottom: 30%;
+        margin: auto;
+        left: 15%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+
+        display: none;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
+        position: absolute;
+        width: 16%;
+        height: 68%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/JavaLogo.png);
+        animation: slideimage 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    @keyframes slideimage {
+        0% {
+
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        11% {
+
+            background: url(../images/CSSLogo.png);
+            background-size: 100% 100%;
+        }
+
+        22% {
+            background: url(../images/HtmlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        33% {
+
+            background: url(../images/IntellijIdeaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        44% {
+
+            background: url(../images/MysqlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        55% {
+            background: url(../images/PythonLogo.png);
+            background-size: 100% 100%;
+        }
+
+        66% {
+            background: url(../images/Arduino.jpg);
+            background-size: 100% 100%;
+        }
+        77% {
+            background: url(../images/FigmaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        88% {
+            background: url(../images/SceneBuilderLogo.png);
+            background-size: 100% 100%
+        }
+
+        99% {
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100%;
+        }
+    }
+    /*section 05*/
+    main > section:nth-child(5) > section > div > img {
+        display: none;
+    }
+
+    main > section:nth-child(5) > section > div:nth-child(4) {
+        position: absolute;
+        width: 247px;
+        height: 250px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/Project1.png);
+        animation: slideimage2 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    @keyframes slideimage2 {
+        0% {
+
+            background: url(../images/Project1.png);
+            background-size: 100% 100%;
+        }
+
+        20% {
+
+            background: url(../images/Project2.png);
+            background-size: 100% 100%;
+        }
+
+        40% {
+            background: url(../images/Project3.png);
+            background-size: 100% 100%;
+        }
+
+        60% {
+
+            background: url(../images/Project1.png);
+            background-size: 100% 100%;
+        }
+
+        80% {
+
+            background: url(../images/Project2.png);
+            background-size: 100% 100%;
+        }
+
+        100% {
+
+            background: url(../images/Project3.png);
+            background-size: 100% 100%;
+        }
+    }
+
+    main > section:nth-child(5) > section > figure > figcaption {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 91%;
+    }
+
+    /*section 06*/
+    main > section:nth-child(6) {
+        position: relative;
+        height: 123vh;
+        filter: saturate(1.4);
+    }
+
+    main > section:nth-child(6) > section {
+        position: relative;
+        top: 31px;
+        bottom: 75%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+        /* width: 79vw; */
+    }
+
+    main > section:nth-child(6) > section > div {
+        margin: auto;
+        box-shadow: -22px 18px 18px 6px #757575;
+        text-align: center;
+        font-size: 0px;
+        width: 38vw;
+        height: 30vh;
+        border-radius: 20px;
+    }
+
+    main > section:nth-child(6) > section > div > img {
+        position: relative;
+        top: 20px;
+        width: 31vw;
+        height: 23vh;
+        border-radius: 20px;
+        bottom: 31vh;
+    }
+
+    /*section 07*/
+    main > section:nth-child(7) {
+        position: relative;
+        height: 251vh;
+    }
+
+    main > section:nth-child(7) > section {
+        position: absolute;
+        right: 5vw;
+        left: 5vw;
+        top: 11vh;
+        bottom: 33vh;
+        margin: auto;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        gap: 9vw;
+    }
+
+    main > section:nth-child(7) > section > section:first-child {
+        top: -20%;
+        width: 70vw;
+        margin: auto;
+        height: 83vh;
+        border-radius: 10px;
+        box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
+        /* position: absolute; */
+    }
+
+    main > section:nth-child(7) > section > section:first-child > img:first-child {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    main > section:nth-child(7) > section > section {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #191E23;
+        border-radius: 20px;
+        width: 77%;
+        height: 58.5vh;
+        box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) {
+        width: 67%;
+        top: 44%;
+        margin-left: 41px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 20px;
+        row-gap: 5px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div {
+        padding: 10px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > label {
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > input {
+        width: 100%;
+        margin-top: 10px;
+        height: 28px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div {
+        padding: 10px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > label {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(4) {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div:nth-child(5) {
+        grid-column: 1/3;
+        grid-row: 5/6;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    /*footer*/
+    body > footer > div > div > a > img {
+        width: 40px;
+    }
+
+    body > footer > div {
+        width: 40%;
+        left: 205px;
+        top: 8%;
+    }
+
+    body > footer > cite {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 20vh;
+        font-size: 12px;
+    }
+
+    body > footer > small {
+        width: 100%;
+        top: 21vh;
+        position: absolute;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*section 01*/
+    main > section:first-child > div > div:first-child > img {
+        width: 34%;
+        height: 50%;
+        top: 0;
+        bottom: 42%;
+        right: 0;
+        left: 49%;
+        margin: auto;
+    }
+
+    main > section:first-child > section {
+        top: 68px;
+        left: 1%;
+        right: 42%;
+        font-size: 28px;
+        position: absolute;
+        height: 6%;
+    }
+
+    main > section:first-child > section > h1 {
+        color: black;
+        padding: 15px;
+        text-align: left;
+        font-size: 45px;
+        padding-left: 4%;
+    }
+
+    main > section:first-child > section > h4 {
+        position: absolute;
+        font-size: 30px;
+        left: 23px;
+        font-family: emoji;
+        top: 260%;
+    }
+
+    main > section:first-child > section > h5 {
+        color: #757575;
+        position: absolute;
+        font-size: 17px;
+        left: 23px;
+        font-family: emoji;
+        top: 420%;
+    }
+
+    main > section:first-child > section > h6 {
+        color: #757575;
+        position: absolute;
+        font-size: 16px;
+        left: 23px;
+        font-family: emoji;
+        top: 604%;
+    }
+
+    main > section:first-child > div > section > div > a > img {
+        width: 40px;
+
+    }
+
+    main > section:first-child > div > section > div:first-child > a > img {
+        top: 11%;
+        left: 94%;
+        position: fixed;
+    }
+
+
+    main > section:first-child > div > section > div:nth-child(2) > a > img {
+        top: 24%;
+        left: 94%;
+        position: fixed;
+    }
+
+    main > section:first-child > div > section > div:nth-child(3) > a > img {
+        top: 38%;
+        left: 94%;
+        position: fixed;
+    }
+
+
+    main > section:first-child > section > button {
+        top: 800%;
+        left: -66%;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        height: 109%;
+    }
+
+    /*Section 02*/
+    main > section:nth-child(2) {
+        height: 86vh;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) > div > img {
+        width: 35%;
+        height: 60%;
+        top: 0;
+        right: 70%;
+        left: 2%;
+        bottom: 7%;
+    }
+
+    main > section:nth-child(2) > section > article > p {
+        position: fixed;
+        font-size: 20px;
+        left: 38%;
+        top: 17%;
+        color: #757575;
+    }
+
+    main > section:nth-child(2) > section > div {
+        margin: auto;
+        position: absolute;
+        bottom: 30%;
+        text-align: center;
+        left: 35%;
+        right: 0;
+        color: #757575;
+    }
+
+
+    /*section 03*/
+    main > section:nth-child(3) > div:nth-child(2) > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:last-child > img {
+        display: none;
+    }
+
+    main > section:nth-child(3) > div:nth-child(4) {
+        background-color: red;
+        position: absolute;
+        width: 56%;
+        height: 46%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/Gallery1.jpg);
+        animation: slideimagebig 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 12px;
+    }
+
+    @keyframes slideimagebig {
+        0% {
+
+            background: url(../images/Gallery2.jpg);
+            background-size: 100% 100%;
+        }
+
+        25% {
+
+            background: url(../images/Gallery3.jpg);
+            background-size: 100% 100%;
+        }
+
+        50% {
+            background: url(../images/Gallery1.jpg);
+            background-size: 100% 100%;
+        }
+
+        75% {
+
+            background: url(../images/Gallery2.jpg);
+            background-size: 100% 100%;
+        }
+
+        100% {
+
+            background: url(../images/Gallery3.jpg);
+            background-size: 100% 100%;
+        }
+    }
+
+    /*section 04*/
+    main > section:nth-child(4) > section:nth-child(2) {
+        position: relative;
+        height: 65vh;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > img {
+        position: absolute;
+        width: 20%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 7%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(2) {
+        position: absolute;
+        left: 35%;
+        top: 40%;
+        font-size: 9px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div > h6:nth-child(3) {
+        position: absolute;
+        left: 35%;
+        top: 60%;
+        font-size: 9px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section {
+        height: 50%;
+        position: absolute;
+        margin: auto;
+        top: 10%;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+
+        display: none;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
+        width: 9%;
+        height: 70%;
+    }
+
+    @keyframes slideimage {
+        0% {
+
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        11% {
+
+            background: url(../images/CSSLogo.png);
+            background-size: 100% 100%;
+        }
+
+        22% {
+            background: url(../images/HtmlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        33% {
+
+            background: url(../images/IntellijIdeaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        44% {
+
+            background: url(../images/MysqlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        55% {
+            background: url(../images/PythonLogo.png);
+            background-size: 100% 100%;
+        }
+
+        66% {
+            background: url(../images/Arduino.jpg);
+            background-size: 100% 100%;
+        }
+        77% {
+            background: url(../images/FigmaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        88% {
+            background: url(../images/SceneBuilderLogo.png);
+            background-size: 100% 100%
+        }
+
+        99% {
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100%;
+        }
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+        display: none;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > h6 {
+        position: absolute;
+        font-family: "Times New Roman";
+        font-size: 2.1vw;
+        text-align: center;
+        top: 10%;
+        right: 0;
+        left: 0;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > div {
+        position: absolute;
+        top: 40%;
+        height: 59%;
+        width: 100%;
+    }
+
+    /*section 05*/
+    main > section:nth-child(5) > section > div:nth-child(4) {
+        position: absolute;
+        width: 247px;
+        height: 250px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/Project1.png);
+        animation: slideimage2 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    @keyframes slideimage2 {
+        0% {
+
+            background: url(../images/Project1.png);
+            background-size: 100% 100%;
+        }
+
+        20% {
+
+            background: url(../images/Project2.png);
+            background-size: 100% 100%;
+        }
+
+        40% {
+            background: url(../images/Project3.png);
+            background-size: 100% 100%;
+        }
+
+        60% {
+
+            background: url(../images/Project1.png);
+            background-size: 100% 100%;
+        }
+
+        80% {
+
+            background: url(../images/Project2.png);
+            background-size: 100% 100%;
+        }
+
+        100% {
+
+            background: url(../images/Project3.png);
+            background-size: 100% 100%;
+        }
+
+    }
+
+    main > section:nth-child(5) > section > div {
+        margin: auto;
+        border-radius: 20px;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    main > section:nth-child(5) > section > div > img {
+        display: none;
+    }
+
+    main > section:nth-child(5) > section > figure > figcaption {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 110%;
+    }
+
+    main > section:nth-child(5) > section > div:nth-child(4) {
+        width: 95%;
+        height: 100%;
+    }
+
+    main > section:nth-child(5) > section > figure > figcaption > h6 {
+        font-size: 15px;
+    }
+
+    /*Section 06*/
+    main > section:nth-child(6) > section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10vw;
+        left: -5%;
+    }
+
+    main > section:nth-child(6) > section > div {
+        width: 23vw;
+        height: 38vh;
+    }
+
+    main > section:nth-child(6) > section > div > img {
+        top: 24px;
+        width: 21vw;
+        height: 30vh;
+        border: 2px solid black;
+    }
+
+    /*section 07*/
+    main > section:nth-child(7) {
+        position: relative;
+        height: 734px;
+    }
+
+    main > section:nth-child(7) > section {
+        top: 92vh;
+        bottom: -9vh;
+    }
+
+    main > section:nth-child(7) > section > section:first-child {
+        top: -291px;
+        width: 31vw;
+        margin-left: 0;
+        height: 84vh;
+    }
+
+    main > section:nth-child(7) > section > section:first-child > img:first-child {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    main > section:nth-child(7) > section > section {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #191E23;
+        border-radius: 20px;
+        width: 77%;
+        height: 58.5vh;
+        box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) {
+        width: 57%;
+        height: 79vh;
+        margin-left: 37%;
+        margin-top: -492px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > textarea {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+        height: 104%;
+        border: 2px solid black;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div {
+        padding: 4px;
+    }
+
+    body > footer {
+        height: 403px;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        bottom: -80%;
+    }
+
+    body > footer > nav {
+        width: 20%;
+        position: relative;
+        left: 47px;
+        top: 5%;
+        display: grid;
+    }
+
+    body > footer > div {
+        width: 40%;
+        position: absolute;
+        left: 60%;
+        top: 5%;
+        justify-content: space-evenly;
+    }
+
+    body > footer > cite {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 65%;
+        font-size: 12px;
+    }
+
+    body > footer > small {
+        width: 100%;
+        top: 67%;
+        position: absolute;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    body > footer > div > div > a > img {
+        width: 40px;
+    }
+}
+
+@media (min-width: 1024px)  {
+    /*section 01*/
+    main > section:first-child > div > div:first-child > img {
+        width: 30%;
+        height: 60%;
+        top: 0;
+        bottom: 28%;
+        right: 0;
+        left: 49%;
+        margin: auto;
+    }
+
+    main > section:first-child > section > button {
+        top: 275px;
+        left: 0;
+        right: 75%;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        height: 100%;
+    }
+
+    /*section 02*/
+    main > section:nth-child(2) > section > article > p {
+        left: 34%;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) > div > img {
+        width: 30%;
+        height: 69%;
+        top: 90px;
+        left: 2%;
+    }
+
+    main > section:nth-child(2) > section > div {
+        bottom: 30%;
+        left: 32%;
+    }
+
+    /*section 03*/
+    main > section:nth-child(3) > div:nth-child(4) {
+        position: absolute;
+        width: 58%;
+        height: 62%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: -80px;
+        margin: auto;
+        animation: slideimagebig 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 12px;
+    }
+
+    /*section 04*/
+    main > section:nth-child(4) > section:nth-child(2) > div > h6 {
+        font-size: 18px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 10px;
+        position: absolute;
+        top: 63%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+
+        display: none;
+    }
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div:last-child {
+        position: absolute;
+        width: 8%;
+        height: 82%;
+        left: 0;
+        right: 0;
+        top: 17px;
+        bottom: 0;
+        margin: auto;
+        background: url(../images/JavaLogo.png);
+        animation: slideimage 20s infinite;
+        background-size: 100% 100%;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    @keyframes slideimage {
+        0% {
+
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        11% {
+
+            background: url(../images/CSSLogo.png);
+            background-size: 100% 100%;
+        }
+
+        22% {
+            background: url(../images/HtmlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        33% {
+
+            background: url(../images/IntellijIdeaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        44% {
+
+            background: url(../images/MysqlLogo.png);
+            background-size: 100% 100%;
+        }
+
+        55% {
+            background: url(../images/PythonLogo.png);
+            background-size: 100% 100%;
+        }
+
+        66% {
+            background: url(../images/Arduino.jpg);
+            background-size: 100% 100%;
+        }
+        77% {
+            background: url(../images/FigmaLogo.png);
+            background-size: 100% 100%;
+        }
+
+        88% {
+            background: url(../images/SceneBuilderLogo.png);
+            background-size: 100% 100%
+        }
+
+        99% {
+            background: url(../images/JavaLogo.png);
+            background-size: 100% 100%;
+        }
+    }
+
+
+    main > section:nth-child(4) > section:nth-child(3) > section > div > img {
+        display: none;
+    }
+
+    /*section 05*/
+    main > section:nth-child(5) > section > div:nth-child(4) {
+        width: 72%;
+        height: 45%;
+        top: 50px;
+    }
+
+    main > section:nth-child(5) > section > figure > figcaption {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 80%;
+    }
+
+    main > section:nth-child(5) > section > figure > figcaption > h6 {
+        font-size: 19px;
+    }
+    /*section 06*/
+    main > section:nth-child(6) {
+        height: 125vh;
+    }
+    /*section 07*/
+    main > section:nth-child(7) > section > section:first-child {
+        top: -60px;
+        width: 31vw;
+        margin-left: 33px;
+        height: 84vh;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) {
+        width: 56%;
+        margin-left: 37%;
+        top: 610px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 20px;
+        row-gap: 14px;
+    }
+
+    main > section:nth-child(7) > section > section:nth-child(2) > form > div > input {
+        width: 100%;
+        margin-top: 10px;
+        height: 34px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    /*footer*/
+    body > footer > nav {
+        left: 30px;
+        top: 5%;
+    }
+
+    body > footer > div {
+        left: 64%;
+        top: 5%;
+    }
+
+    body > footer > cite {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 65%;
+        font-size: 15px;
+    }
+
+    body > footer > small {
+        top: 65%;
+        font-size: 17px;
+    }
+
+
+
 }
