@@ -56,6 +56,17 @@ header > div:last-child {
     display: none;
 }
 
+header>div>h1>a>img {
+    border-style: none;
+    height: 76px;
+    top: 0px;
+    position: absolute;
+}
+
+body > header > div > h1 {
+    height: 32px;
+}
+
 /*-main style*/
 main {
     position: relative;
