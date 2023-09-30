@@ -13,6 +13,7 @@ header {
     width: 100%;
     box-shadow: 1px 2px 1px #6b5a5a;
     z-index: 3;
+    top: 0;
 }
 
 header > div:first-child {
@@ -75,26 +76,47 @@ main {
     width: 100%;
 }
 
-/*Section 01*/
 main > section > div:first-child {
     box-shadow: 0px 0px 3px 0px #6b5a5a;
     height: 60px;
     width: 100%;
     background: white;
     position: sticky;
-    top: 53px;
+    top: 77px;
     background-color: #EF6C00;
-
     /*border-radius: 0px 15px 15px 0px;*/
-
     z-index: 2;
     text-align: center;
+    font-size: 13px;
+}
+
+/*Section 01*/
+
+main > section > div:first-child {
+    box-shadow: 0px 0px 3px 0px #6b5a5a;
+    height: 60px;
+    width: 100%;
+    background: white;
+    position: sticky;
+    top: 77px;
+    background-color: #EF6C00;
+    /* border-radius: 0px 15px 15px 0px; */
+    z-index: 2;
+    text-align: center;
+
 }
 
 main > section > div > h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
     color: black;
-    padding: 15px;
+    /* padding: 10px; */
     text-align: center;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+
 }
 
 main > section {
@@ -933,6 +955,7 @@ body > footer > small {
     }
 
     /*section 01*/
+
     main > section:first-child > div > div:first-child > img {
         border-radius: 200%;
         width: 67%;
@@ -1412,19 +1435,6 @@ body > footer > small {
         position: relative;
         height: 205vh;
         filter: saturate(1.4);
-    }
-
-    main > section > div:first-child {
-        box-shadow: 0px 0px 3px 0px #6b5a5a;
-        height: 60px;
-        width: 100%;
-        background: white;
-        position: sticky;
-        top: 53px;
-        background-color: #EF6C00;
-        /* border-radius: 0px 15px 15px 0px; */
-        z-index: 2;
-        text-align: center;
     }
 
     main > section:nth-child(6) > section {
@@ -2238,7 +2248,7 @@ body > footer > small {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     /*section 01*/
     main > section:first-child > div > div:first-child > img {
         width: 34%;
@@ -2334,12 +2344,12 @@ body > footer > small {
     }
 
     main > section:nth-child(2) > div:nth-child(2) > div > img {
-        width: 35%;
-        height: 60%;
-        top: 0;
+        width: 36%;
+        height: 65%;
+        top: 70px;
         right: 70%;
         left: 2%;
-        bottom: 7%;
+        bottom: 0%;
     }
 
     main > section:nth-child(2) > section > article > p {
@@ -2620,19 +2630,25 @@ body > footer > small {
         text-align: center;
         left: 0;
         right: 0;
-        top: 110%;
+        top: 84%;
     }
 
     main > section:nth-child(5) > section > div:nth-child(4) {
         width: 95%;
-        height: 100%;
+        height: 469px;
     }
 
     main > section:nth-child(5) > section > figure > figcaption > h6 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     /*Section 06*/
+    main > section:nth-child(6) {
+        position: relative;
+        height: 120vh;
+        filter: saturate(1.4);
+    }
+
     main > section:nth-child(6) > section {
         grid-template-columns: repeat(3, 1fr);
         gap: 10vw;
@@ -2654,7 +2670,7 @@ body > footer > small {
     /*section 07*/
     main > section:nth-child(7) {
         position: relative;
-        height: 734px;
+        height: 120vh;
     }
 
     main > section:nth-child(7) > section {
@@ -2663,10 +2679,10 @@ body > footer > small {
     }
 
     main > section:nth-child(7) > section > section:first-child {
-        top: -291px;
+        top: -225px;
         width: 31vw;
-        margin-left: 0;
-        height: 84vh;
+        left: -60px;
+        height: 0vh;
     }
 
     main > section:nth-child(7) > section > section:first-child > img:first-child {
@@ -2691,8 +2707,8 @@ body > footer > small {
     main > section:nth-child(7) > section > section:nth-child(2) {
         width: 57%;
         height: 79vh;
-        margin-left: 37%;
-        margin-top: -492px;
+        left: 31%;
+        top: 118px;
     }
 
     main > section:nth-child(7) > section > section:nth-child(2) > form > div > textarea {
@@ -2707,12 +2723,13 @@ body > footer > small {
         padding: 4px;
     }
 
+    /*footer*/
     body > footer {
-        height: 403px;
-        width: 100%;
+        height: 280vh;
+        width: 90%;
         z-index: 1;
         position: relative;
-        bottom: -80%;
+        bottom: 0;
     }
 
     body > footer > nav {
@@ -2752,7 +2769,7 @@ body > footer > small {
     }
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px)  and (max-width:1075px){
     /*section 01*/
     main > section:first-child > div > div:first-child > img {
         width: 30%;
@@ -2772,6 +2789,14 @@ body > footer > small {
         margin: auto;
         text-align: center;
         height: 100%;
+    }
+
+    main > section:first-child > section > h1 {
+        color: black;
+        padding: 0;
+        text-align: left;
+        font-size: 45px;
+        padding-left: 3%;
     }
 
     /*section 02*/
@@ -2925,16 +2950,16 @@ body > footer > small {
     }
     /*section 07*/
     main > section:nth-child(7) > section > section:first-child {
-        top: -60px;
+        top: 6px;
         width: 31vw;
-        margin-left: 33px;
+        left: -55px;
         height: 84vh;
     }
 
     main > section:nth-child(7) > section > section:nth-child(2) {
         width: 56%;
-        margin-left: 37%;
-        top: 610px;
+        margin-left: 7%;
+        top: 135px;
     }
 
     main > section:nth-child(7) > section > section:nth-child(2) > form {
@@ -2954,27 +2979,37 @@ body > footer > small {
     }
 
     /*footer*/
+    body > footer {
+        height: 250px;
+        width: 90%;
+        z-index: 1;
+        position: relative;
+        bottom: 0;
+    }
+
     body > footer > nav {
         left: 30px;
-        top: 5%;
+        top: 47%;
     }
 
     body > footer > div {
-        left: 64%;
-        top: 5%;
+        left: 70%;
+        top: 47%;
     }
 
     body > footer > cite {
         width: 100%;
         position: absolute;
         text-align: center;
-        top: 65%;
+        top: 86%;
         font-size: 15px;
+        left: 57px;
     }
 
     body > footer > small {
-        top: 65%;
-        font-size: 17px;
+        top: 86%;
+        font-size: 16px;
+        left: 60px;
     }
 
 
