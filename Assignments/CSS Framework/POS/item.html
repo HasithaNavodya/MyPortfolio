@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/bootstrap.js"></script>
+</head>
+<header>
+    <nav style="background-color: white" class="navbar navbar-expand-lg bg-secondary ">
+        <div class="container-fluid ">
+            <img src="assets\H.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-center">
+            <p id="p-inheader" class="navbar-collapse">Shop</p>
+            <div >
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active " style="color:black" aria-current="page" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " style="color:black" aria-current="page" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " style="color:black"aria-current="page" href="order.html">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body >
+    <section class="container text-start" id="item">
+        <h1>Item Form </h1>
+        <section class="row row-gap-5">
+            <section class="row row-gap-3 row align-items-center row justify-content-between">
+                <div class="col-6">
+                    <div >
+                        <label  class="form-label">Item ID</label>
+                        <input type="text" class="form-control" id="itemID" aria-describedby="emailHelp">
+                    </div>
+                    <div >
+                        <label  class="form-label">Item Name</label>
+                        <input type="text" class="form-control"aria-describedby="emailHelp">
+                    </div>
+                    <div >
+                        <label  class="form-label">Unit Price</label>
+                        <input type="text" class="form-control"  aria-describedby="emailHelp">
+                    </div>
+                    <div >
+                        <label  class="form-label">Quantity</label>
+                        <input type="text" class="form-control" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary ">Save</button>
+                        <button type="submit" class="btn btn-primary bg-warning">Update</button>
+                        <button type="submit" class="btn btn-primary bg-danger">Delete</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <section class="row align-items-center">
+                        <div class="col">
+                            <h1>Search Item</h1>
+                            <div >
+                                <label  class="form-label">Item ID</label>
+                                <input type="text" class="form-control" id="srhID" aria-describedby="emailHelp">
+                                <button type="submit" class="btn btn-primary ">Search</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section >
+                <table class="table table-striped table-hover">
+                    <thead class="bg-warning bg-opacity-75">
+                    <tr>
+                        <th scope="col">Item ID</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">01</th>
+                        <td>Table</td>
+                        <td>10000.00</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">02</th>
+                        <td>Book</td>
+                        <td>140.00</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">03</th>
+                        <td>Bottle</td>
+                        <td>650.00</td>
+                        <td>6</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
