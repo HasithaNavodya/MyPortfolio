@@ -1,126 +1,257 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width initial-scale=1">-->
+<!--    <link rel="stylesheet" href="normalize.css">-->
+<!--    <title>Assignments</title>-->
+<!--    <style>-->
+<!--        * {-->
+<!--            list-style: none;-->
+<!--            text-decoration: none;-->
+<!--            background-color: #ffffff;-->
+<!--        }-->
+
+<!--        body {-->
+<!--            background-color: #ffffff;-->
+<!--        }-->
+
+<!--        section {-->
+<!--            color: black;-->
+<!--            position: absolute;-->
+<!--            left: 20px;-->
+<!--            right: 20px;-->
+<!--            top: 20px;-->
+<!--            bottom: 20px;-->
+<!--            background-color: #ffffff;-->
+<!--            border: 3px solid #e51313;-->
+<!--            display: grid;-->
+<!--            grid-template-rows: repeat(1, 1fr);-->
+<!--            grid-template-columns: repeat(3, 1fr);-->
+
+<!--        }-->
+
+<!--        section>div {-->
+<!--            border: 1px solid rgb(87, 78, 78);-->
+<!--        }-->
+
+<!--        section>div>div:first-child>div>h1 {-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        section>div>div:last-child>div>h2 {-->
+<!--            position: relative;-->
+<!--            left: 9%;-->
+<!--            width: 20%;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<section>-->
+<!--    <div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h1>Css</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Case 1/index.html">case 1</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Case 2/index.html">case 2</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Case 3/index.html">case 3</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Case 4/index.html">case 4</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Case 5/index.html">case 5</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Case 6/index.html">case 6</a></h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h1>Animation</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Animation/Case 1/index.html">case 1</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Animation/Case 2/index.html">case 2</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Animation/Case 3/index.html">case 3</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Animation/Case 4/index.html">case 4</a></h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h1>Transition</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Transition/Case 1/index.html">case 1</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Transition/Case 2/index.html">case 2</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Transition/Case 3/index.html">case 3</a></h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS/Transition/Case 4/index.html">case 4</a></h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h1>CSS Framework</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <div>-->
+<!--                <h2><a href="CSS Framework/POS/index.html">CSS Framework</a></h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+
+
+<!--</section>-->
+
+<!--</body>-->
+
+<!--</html>-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
     <title>Assignments</title>
+    <!--    <link rel="stylesheet" href="../css/AssignmentStyle.css">-->
     <style>
-        * {
-            list-style: none;
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background: black;
+        }
+
+        main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cssContainer{
+            margin: 2vh;
+            padding: 2vh;
+            border: 2px solid #FA981D;
+        }
+
+        .cssContainer h4{
+            font-family: sans-serif;
+            color: #FA981D;
+            font-weight: 400;
+        }
+
+        .css{
+            display: flex;
+            height: 30vh;
+            width: auto;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        main a{
+            border-radius: 10px;
+            margin: 2vh;
             text-decoration: none;
-            background-color: #ffffff;
+            color: #FA981D;
+            padding: 2vh;
+            height: max-content;
+            width: max-content;
+            background: #363131;
+            transition: 0.5s;
+            font-family: sans-serif;
         }
 
-        body {
-            background-color: #ffffff;
+
+
+        main a:hover{
+            background: #FA981D;
+            color:  #363131;
         }
 
-        section {
-            color: black;
-            position: absolute;
-            left: 20px;
-            right: 20px;
-            top: 20px;
-            bottom: 20px;
-            background-color: #ffffff;
-            border: 3px solid #e51313;
-            display: grid;
-            grid-template-rows: repeat(1, 1fr);
-            grid-template-columns: repeat(3, 1fr);
 
-        }
-
-        section>div {
-            border: 1px solid rgb(87, 78, 78);
-        }
-
-        section>div>div:first-child>div>h1 {
-            text-align: center;
-        }
-
-        section>div>div:last-child>div>h2 {
-            position: relative;
-            left: 9%;
-            width: 20%;
-        }
     </style>
 </head>
-
 <body>
+<main>
+    <section class="cssContainer">
+        <h4>CSS</h4>
+        <div class="css">
+            <a href="CSS/Case 1/index.html" target="_blank">Case 1</a>
+            <a href="CSS/Case 2/index.html" target="_blank">Case 2</a>
+            <a href="CSS/Case 3/index.html" target="_blank">Case 3</a>
+            <a href="CSS/Case 4/index.html" target="_blank">Case 4</a>
+            <a href="CSS/Case 5/index.html" target="_blank">Case 5</a>
+            <a href="CSS/Case 6/index.html" target="_blank">Case 6</a>
+        </div>
+    </section>
 
-<section>
-    <div>
-        <div>
-            <div>
-                <h1>Css</h1>
-            </div>
+    <section class="cssContainer">
+        <h4>Transitions</h4>
+        <div class="css">
+            <a href="CSS/Transition/Case 1/index.html" target="_blank">Case 1</a>
+            <a href="CSS/Transition/Case 2/index.html" target="_blank">Case 2</a>
+            <a href="CSS/Transition/Case 3/index.html" target="_blank">Case 3</a>
+            <a href="CSS/Transition/Case 4/index.html" target="_blank">Case 4</a>
         </div>
-        <div>
-            <div>
-                <h2><a href="CSS/Case 1/index.html">case 1</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Case 2/index.html">case 2</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Case 3/index.html">case 3</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Case 4/index.html">case 4</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Case 5/index.html">case 5</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Case 6/index.html">case 6</a></h2>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>
-            <div>
-                <h1>Animation</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h2><a href="CSS/Animation/Case 1/index.html">case 1</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Animation/Case 2/index.html">case 2</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Animation/Case 3/index.html">case 3</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Animation/Case 4/index.html">case 4</a></h2>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>
-            <div>
-                <h1>Transition</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h2><a href="CSS/Transition/Case 1/index.html">case 1</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Transition/Case 2/index.html">case 2</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Transition/Case 3/index.html">case 3</a></h2>
-            </div>
-            <div>
-                <h2><a href="CSS/Transition/Case 4/index.html">case 4</a></h2>
-            </div>
-        </div>
-    </div>
-</section>
 
+    </section>
+
+    <section class="cssContainer">
+        <h4>Animations</h4>
+        <div class="css">
+            <a href="CSS/Animation/Case 1/index.html" target="_blank">Case 1</a>
+            <a href="CSS/Animation/Case 2/index.html" target="_blank">Case 2</a>
+            <a href="CSS/Animation/Case 3/index.html" target="_blank">Case 3</a>
+            <a href="CSS/Animation/Case 4/index.html" target="_blank">Case 4</a>
+        </div>
+
+    </section>
+
+    <section class="cssContainer">
+        <h4>Frameworks</h4>
+        <div class="css">
+            <a href="CSS Framework/POS/index.html" target="_blank">CSS Framework Pos</a>
+        </div>
+
+    </section>
+
+   
+</main>
 </body>
-
 </html>
