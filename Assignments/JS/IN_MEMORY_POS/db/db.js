@@ -1,0 +1,2 @@
+let cutomerList=[];
+let itemList=[];
