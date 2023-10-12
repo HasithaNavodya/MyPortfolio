@@ -1,2 +1,0 @@
-let cutomerList=[];
-let itemList=[];
