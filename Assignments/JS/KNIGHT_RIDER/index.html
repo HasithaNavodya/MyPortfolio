@@ -11,6 +11,15 @@
             color: black;
             font-family: "Times New Roman";
         }
+
+        body>div>div:nth-child(2)>div{
+            position: relative;
+            left: 0;
+            justify-content: center;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -24,21 +33,21 @@
             <div class="row h-25 position-relative justify-content-center start-50 translate-middle mt-5 ms-5 "
                  style="width:40%; ">
                 <div class="col-4  p-0 m-0 ">
-                    <p class="fs-3 opacity-75  d-inline-block" style="width:40%; color: #bb2d3b">Speed </p>
-                    <p id="speed" class="fs-3  ms-2 ps-2 border-end border-danger d-inline-block  "
+                    <p class="fs-3 opacity-75  d-inline-block" style="width:40%; color: black; left: 0; bottom: 0; top: 0; right: 0; justify-content: center">Speed </p>
+                    <p id="speed" class="fs-3  ms-2 ps-2 border-end border-danger d-inline-block"
                        style="width: 50%; color: #0c5ace">85%</p>
                 </div>
                 <div class="col-8  p-0 m-0 ">
-                    <p class="fs-3 opacity-75 ms-3  d-inline-block " style="width:50%; color: #bb2d3b">Waiting Time </p>
+                    <p class="fs-3 opacity-75 ms-3  d-inline-block " style="width:50%; color: black; left: 0; bottom: 0; top: 0; right: 0; justify-content: center">Waiting Time </p>
                     <p id="time" class="fs-3   ps-0  d-inline-block" style="width: 10%; color: #0c5ace">450</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row-cols-1 h-25 position-relative">
-        <div class="container-fluid  position-absolute top-50 start-50 translate-middle p-0 "
+        <div class="container-fluid start-50 translate-middle p-0 "
              style="width: 80vw; height: 10vw;">
-            <div class="row bg-transparent  w-100 m-0 position-absolute top-50 translate-middle-y rounded-5 gap-1 "
+            <div class="row bg-transparent  w-100 m-0 translate-middle-y rounded-5 gap-1 "
                  style="height: 30%;">
                 <div id="firstDiv" class="col-1"></div>
                 <div class="col-1"></div>
@@ -57,10 +66,10 @@
     <div class="row h-25 w-50  position-relative align-items-center" style="left: 30vw;">
         <div class="col-5 d-flex">
             <div>
-                <button id="start" class="btn  btn-primary me-5 " style="width: 8vw;">Start</button>
+                <button id="start" class="btn  btn-light me-5 gap-1" style="width: 8vw;">Start</button>
             </div>
             <div>
-                <button id="stop" class="btn  btn-danger me-5 " style="width: 8vw;">Stop</button>
+                <button id="stop" class="btn  btn-dark me-5 " style="width: 8vw;">Stop</button>
             </div>
         </div>
         <div class="col-7 position-relative  ">

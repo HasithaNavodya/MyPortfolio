@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="assets/js/bootstrap.js"></script>
+    <style>
+        #order>div{
+            position: absolute;
+            top: 10vh;
+
+        }
+        #order>div>table{
+            width: 100vw;
+        }
+        #order>h1{
+            position: absolute;
+            left: 40vw;
+
+        }
+        .btnEdit{
+            color: white;
+            background-color: orange;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .btnDelete{
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+    <script src="assets/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+</head>
+<header  >
+
+    <nav style="background-color: white" class="navbar navbar-expand-lg bg-secondary ">
+        <div class="container-fluid ">
+            <img src="assets/H.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-center">
+            <p id="p-inheader" class="navbar-collapse">Shop</p>
+            <div >
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a id="btnCustomer" class="nav-link active text-warning" aria-current="page" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnOrder" class="nav-link active text-warning" aria-current="page" href="#">Place Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnItems" class="nav-link active text-warning" aria-current="page" href="#">Items</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnOr" class="nav-link active text-warning" aria-current="page" href="#">Orders</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body >
+
+
+<section class="container text-start" id="customer">
+    <h1>Customer Form &copy;</h1>
+    <section class="row row-gap-5">
+        <section class="row row-gap-3 row align-items-center row justify-content-between">
+
+            <form class="col-6">
+
+                <div >
+                    <label  class="form-label">Customer ID</label>
+                    <input id="CustID" disabled type="text"  class="form-control" id="customerID" aria-describedby="emailHelp">
+                </div>
+
+                <div >
+                    <label  class="form-label">Customer Name</label>
+                    <input id="CustName" type="text" class="form-control"aria-describedby="emailHelp" required >
+                </div>
+
+                <div >
+                    <label  class="form-label">Address</label>
+                    <input id="CustAddress" type="text" class="form-control"  aria-describedby="emailHelp" required>
+                </div>
+
+                <div >
+                    <label  class="form-label">Contact</label>
+                    <input id="CustContact" type="text" class="form-control" aria-describedby="emailHelp" required>
+                </div>
+
+                <div>
+                    <button id="btnCustSave111" type="submit" class="btn btn-primary ">Save</button>
+                    <button id="btnUpdateCust" type="submit" class="btn btn-primary bg-success">Update</button>
+                    <button id="btnDelteCust" type="submit" class="btn btn-primary bg-danger">Delete</button>
+                </div>
+
+            </form>
+
+            <div class="col-4">
+                <section class="row align-items-center">
+                    <div class="col">
+                        <h1>Search Customer</h1>
+                        <div >
+                            <label  class="form-label">Customer ID</label>
+                            <input type="text" class="form-control" id="srhItmID" aria-describedby="emailHelp">
+                            <button type="submit" class="btn btn-primary ">Search</button>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+        <section >
+            <table id="customerTable" class="table table-striped table-hover">
+                <thead class="bg-warning bg-opacity-75">
+                <tr>
+                    <th scope="col">Customer-ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Contact</th>
+                </tr>
+                </thead>
+                <tbody id="tableCustomerBody">
+
+                </tbody>
+            </table>
+
+        </section>
+    </section>
+
+</section>
+
+<!--Items-->
+<section class="container text-start" id="item">
+    <h1>Item Form &copy;</h1>
+    <section class="row row-gap-5">
+        <section class="row row-gap-3 row align-items-center row justify-content-between">
+
+            <div class="col-6">
+
+                <div >
+                    <label  class="form-label">Item ID</label>
+                    <input id="txtItemID" type="text" disabled class="form-control" id="itemID" aria-describedby="emailHelp">
+                </div>
+
+                <div >
+                    <label  class="form-label">Item Name</label>
+                    <input id="txtItemName" type="text" class="form-control"aria-describedby="emailHelp">
+                </div>
+
+                <div >
+                    <label  class="form-label">Unit Price</label>
+                    <input id="txtPrice" type="number" class="form-control"  aria-describedby="emailHelp">
+                </div>
+
+                <div >
+                    <label  class="form-label">Quantity</label>
+                    <input id="txtQty" type="number" class="form-control" aria-describedby="emailHelp">
+                </div>
+
+                <div>
+                    <button id="btnItemAdd" type="submit" class="btn btn-primary ">Add</button>
+                    <button id="btnItemUpdate" type="submit" class="btn btn-primary bg-success">Update</button>
+                    <button id="btnItemDelete" type="submit" class="btn btn-primary bg-danger">Delete</button>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <section class="row align-items-center">
+                    <div class="col">
+                        <h1>Search Item</h1>
+                        <div >
+                            <label  class="form-label">Item ID</label>
+                            <input type="text" class="form-control" id="srhID" aria-describedby="emailHelp">
+                            <button type="submit" class="btn btn-primary ">Search</button>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+        <section >
+            <table id="itemTable" class="table table-striped table-hover">
+                <thead class="bg-warning bg-opacity-75">
+                <tr>
+                    <th scope="col">Item-ID</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                </tr>
+                </thead>
+                <tbody id="itemBody">
+
+                </tbody>
+            </table>
+
+        </section>
+    </section>
+
+</section>
+
+
+
+<section class="container-fluid" id="placeORder">
+
+    <h2 style="color: #FA981D" class="mt-2 border-bottom">Place Order</h2>
+
+    <section class="row mt-3 border border-dark rounded p-3">
+        <form action="">
+            <div class="row border border-dark rounded p-2">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Order ID</span>
+<!--                        <input id="txtOrderID" class="form-control" type="text" placeholder="O-001" aria-label="Disabled input example" disabled>-->
+                        <input id="txtOrderID" disabled type="text" class="form-control"  aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Date</span>
+                        <input id="txtdate" class="form-control" type="text"  aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">CustomerID</span>
+                        <select id="custIds" onchange="getSelectedCustID()" class="form-select" aria-label="Default select example">
+                            <option selected disabled hidden>Customer ID</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Customer Name</span>
+                        <input id="custNameRst" class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-5 mb-2 p-3 border border-dark rounded">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item ID</span>
+                        <select id="itemIds" class="form-select" onchange="getSelectedItemID()" aria-label="Default select example">
+                            <option id="promtItem" selected disabled hidden>Item ID</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Item Name</span>
+                        <input id="custItemRst" class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Qty On Hand</span>
+                        <input class="form-control" id="txtQytRst" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Unit Price</span>
+                        <input id="txtPriceRst" class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Quantity</span>
+                        <input id="txtQtyOd" class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-10"></div>
+                <div class="col-2">
+                    <button id="btnAddToCart" type="button" class="btn btn-outline-success">Add to Cart</button>
+                    <button id="clearButton" type="button" class="btn btn-outline-warning">Clear</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <section class="row mt-3 border border-dark rounded p-3">
+        <div class="row">
+            <table class="table table-light table-striped">
+                <thead>
+                <tr>
+                    <th style="background-color: #CD9A5A" scope="col">Item ID</th>
+                    <th style="background-color: #CD9A5A" scope="col">Item Name</th>
+                    <th style="background-color: #CD9A5A" scope="col">Qty</th>
+                    <th style="background-color: #CD9A5A" scope="col">Unit Price</th>
+                    <th style="background-color: #CD9A5A" scope="col">Total</th>
+                    <th style="background-color: #CD9A5A" scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody id="tblPlaceOrderBody">
+
+                </tbody>
+            </table>
+        </div>
+        <form action="">
+            <div class="row mt-3">
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Total-Rs:</span>
+                        <input id="txtTot" class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Discount-Rs:</span>
+                        <input id="txtDiscount" class="form-control" type="number" placeholder="" aria-label="Disabled input example">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-group">
+                        <span class="input-group-text">Sub Tot-Rs:</span>
+                        <input id="txtSubTot" class="form-control" type="text" placeholder="" aria-label="Disabled input example" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row mt-3">
+            <div class="col-10"></div>
+            <div class="col-2">
+                <button id="btnPurchase" type="button" class="btn btn-outline-success">Purchase</button>
+                <button id="btnCancel" type="button" class="btn btn-outline-danger">Cancel</button>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section id="order" class="position-relative">
+    <h1 class="display-5 ">Orders Table</h1>
+    <div >
+        <table class="table table-light table-striped">
+            <thead>
+            <tr>
+                <th style="background-color: #CD9A5A" scope="col">Order ID</th>
+                <th style="background-color: #CD9A5A" scope="col">Customer ID</th>
+                <th style="background-color: #CD9A5A" scope="col">Total</th>
+                <th style="background-color: #CD9A5A" scope="col">Discount</th>
+                <th style="background-color: #CD9A5A" scope="col">Sub-Total</th>
+                <th style="background-color: #CD9A5A" scope="col">Date</th>
+            </tr>
+            </thead>
+            <tbody id="tblOrderBody">
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<script>
+    
+    let selectedTable;
+    let findIndex;
+    let buttonEdit;
+    let buttonDelete;
+    let custId;
+    let itemD;
+
+
+    document.getElementById("order").style.display="none";
+    document.getElementById("customer").style.display="block";
+    document.getElementById("placeORder").style.display="none";
+    document.getElementById("item").style.display="none";
+
+
+
+    $('#CustID').val("C00-001");
+    $('#txtItemID').val("I00-001");
+
+
+
+
+
+
+
+</script>
+<script src="controller/order.js"></script>
+<script src="controller/orderTable.js"></script>
+<script src="controller/customer.js"></script>
+<script src="controller/item.js"></script>
+<script src="db/db.js"></script>
+</body>
+</html>
